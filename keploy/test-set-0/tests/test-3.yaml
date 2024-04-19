@@ -1,0 +1,47 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: test-3
+spec:
+    metadata: {}
+    req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8080/api/test/user
+        header:
+            Accept: '*/*'
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+            X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNDk1ODgxLCJleHAiOjE3MTM1ODIyODF9.anxuJTITI3PPtcCOtRGFqCKvuGBIkhW4GQ3Hgoc8x1s
+        body: ""
+        timestamp: 2024-04-19T03:04:57.31537585Z
+    resp:
+        status_code: 200
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "13"
+            Content-Type: text/html; charset=utf-8
+            Date: Fri, 19 Apr 2024 03:04:57 GMT
+            Etag: W/"d-AznB8FXUt+NgRdD3M3LvzELOYl8"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: User Content.
+        status_message: OK
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T03:04:59.3738339Z
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1713495899
+curl: |
+    curl --request GET \
+      --url http://localhost:8080/api/test/user \
+      --header 'X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNDk1ODgxLCJleHAiOjE3MTM1ODIyODF9.anxuJTITI3PPtcCOtRGFqCKvuGBIkhW4GQ3Hgoc8x1s' \
+      --header 'Host: localhost:8080' \
+      --header 'User-Agent: curl/7.88.1' \
+      --header 'Accept: */*' \

@@ -1,0 +1,58 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: test-2
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8080/api/auth/signin
+        header:
+            Accept: '*/*'
+            Content-Length: "87"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+        body: |-
+            {
+                "username":"sarthak016",
+                "email":"sarthak@keploy.io",
+                "password":"1234"
+            }
+        timestamp: 2024-04-19T03:04:41.852344999Z
+    resp:
+        status_code: 200
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "236"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 03:04:41 GMT
+            Etag: W/"ec-f4t8VVLLJqqNLN7HR56pgd6AJ3o"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"id":1,"username":"sarthak016","email":"sarthak@keploy.io","roles":["ROLE_USER"],"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNDk1ODgxLCJleHAiOjE3MTM1ODIyODF9.anxuJTITI3PPtcCOtRGFqCKvuGBIkhW4GQ3Hgoc8x1s"}'
+        status_message: OK
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T03:04:43.917843497Z
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1713495883
+curl: |-
+    curl --request POST \
+      --url http://localhost:8080/api/auth/signin \
+      --header 'Accept: */*' \
+      --header 'Content-Type: application/json' \
+      --header 'Host: localhost:8080' \
+      --header 'User-Agent: curl/7.88.1' \
+      --data '{
+        "username":"sarthak016",
+        "email":"sarthak@keploy.io",
+        "password":"1234"
+    }'

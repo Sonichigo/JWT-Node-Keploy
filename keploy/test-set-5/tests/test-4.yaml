@@ -1,0 +1,47 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: test-4
+spec:
+    metadata: {}
+    req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8080/api/test/mod
+        header:
+            Accept: '*/*'
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+            X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNDk2NzczLCJleHAiOjE3MTM1ODMxNzN9.3kxAn1oqRplymdJFCY-Jadfj5CcJo7XpaT8cLpKJA7I
+        body: ""
+        timestamp: 2024-04-19T03:20:05.404582732Z
+    resp:
+        status_code: 403
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "37"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 03:20:05 GMT
+            Etag: W/"25-9u7N3c55n209s3z9X7qdOJkOE5Y"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"Require Moderator Role!"}'
+        status_message: Forbidden
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T03:20:07.475529792Z
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1713496807
+curl: |
+    curl --request GET \
+      --url http://localhost:8080/api/test/mod \
+      --header 'Accept: */*' \
+      --header 'X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNDk2NzczLCJleHAiOjE3MTM1ODMxNzN9.3kxAn1oqRplymdJFCY-Jadfj5CcJo7XpaT8cLpKJA7I' \
+      --header 'Host: localhost:8080' \
+      --header 'User-Agent: curl/7.88.1' \

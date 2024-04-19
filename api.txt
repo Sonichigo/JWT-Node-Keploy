@@ -1,0 +1,32 @@
+1. Signup
+
+curl --location 'http://localhost:8080/api/auth/signup' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "username":"sarthak016",
+    "email":"sarthak@keploy.io",
+    "password":"1234"
+}'
+
+2. Signin
+
+curl --location 'http://localhost:8080/api/auth/signin' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "username":"sarthak016",
+    "email":"sarthak@keploy.io",
+    "password":"1234"
+}'
+
+3. User Access
+
+curl --location 'http://localhost:8080/api/test/user' \
+--header 'x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNDkzODc3LCJleHAiOjE3MTM1ODAyNzd9.wmKk1Gpd-bMp_xQO1TYms_HE5RBYy05xkMV1YonhixE'
+
+4. Mod access (blocked)
+
+curl --location 'http://localhost:8080/api/test/mod' \
+--header 'x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNDk2NzczLCJleHAiOjE3MTM1ODMxNzN9.3kxAn1oqRplymdJFCY-Jadfj5CcJo7XpaT8cLpKJA7I'
+
+5. Update Role
+curl -X PUT -H "Content-Type: application/json" -d '{"role": "moderator"}' http://localhost:8080/api/user/1/updateRole  -H "x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNDk2NzczLCJleHAiOjE3MTM1ODMxNzN9.3kxAn1oqRplymdJFCY-Jadfj5CcJo7XpaT8cLpKJA7I"
