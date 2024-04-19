@@ -1,0 +1,51 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: test-3
+spec:
+    metadata: {}
+    req:
+        method: PUT
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8080/api/user/1/updateRole
+        header:
+            Accept: '*/*'
+            Content-Length: "17"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+            X-Access-Token: accessToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzEzNTAxNjIwLCJleHAiOjE3MTM1ODgwMjB9.rnPnlBj2Q2MSS87tvrfU8aZYK0LTH9DemmKTZMyvQDo
+        body: '{"role": "admin"}'
+        timestamp: 2024-04-19T04:40:44.558102991Z
+    resp:
+        status_code: 401
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "27"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:40:44 GMT
+            Etag: W/"1b-+hyVTXaAZn38wYQ0jjrBzf9HwPI"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"Unauthorized!"}'
+        status_message: Unauthorized
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:40:46.628791006Z
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1713501646
+curl: |-
+    curl --request PUT \
+      --url http://localhost:8080/api/user/1/updateRole \
+      --header 'Content-Type: application/json' \
+      --header 'X-Access-Token: accessToken:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzEzNTAxNjIwLCJleHAiOjE3MTM1ODgwMjB9.rnPnlBj2Q2MSS87tvrfU8aZYK0LTH9DemmKTZMyvQDo' \
+      --header 'Host: localhost:8080' \
+      --header 'User-Agent: curl/7.88.1' \
+      --header 'Accept: */*' \
+      --data '{"role": "admin"}'

@@ -1,0 +1,51 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: test-3
+spec:
+    metadata: {}
+    req:
+        method: PUT
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8080/api/user/1/updateRole
+        header:
+            Accept: '*/*'
+            Content-Length: "17"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+            X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNTAxMTA3LCJleHAiOjE3MTM1ODc1MDd9.fI_NOuYc1L9xgCwu50r685n4rDN0KUG8dA1yT1nmz4U
+        body: '{"role": "admin"}'
+        timestamp: 2024-04-19T04:33:04.072141995Z
+    resp:
+        status_code: 403
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "33"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:33:04 GMT
+            Etag: W/"21-gJAHz/3ltoRSM1Lfi4co8rvPVXU"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"Require Admin Role!"}'
+        status_message: Forbidden
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:33:06.107029041Z
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1713501186
+curl: |-
+    curl --request PUT \
+      --url http://localhost:8080/api/user/1/updateRole \
+      --header 'Host: localhost:8080' \
+      --header 'User-Agent: curl/7.88.1' \
+      --header 'Accept: */*' \
+      --header 'Content-Type: application/json' \
+      --header 'X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNTAxMTA3LCJleHAiOjE3MTM1ODc1MDd9.fI_NOuYc1L9xgCwu50r685n4rDN0KUG8dA1yT1nmz4U' \
+      --data '{"role": "admin"}'

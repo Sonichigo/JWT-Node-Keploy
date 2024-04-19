@@ -1,0 +1,60 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: test-8
+spec:
+    metadata: {}
+    req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8080/api/auth/signup
+        header:
+            Accept: '*/*'
+            Content-Length: "98"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+        body: |-
+            {
+                "username":"soni",
+                "email":"son@keploy.io",
+                "password":"1234",
+                "roles":"admin"
+            }
+        timestamp: 2024-04-19T04:37:47.299159979Z
+    resp:
+        status_code: 400
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "46"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:37:47 GMT
+            Etag: W/"2e-5Pa5gWq67HmNOAPolkdUjFcVB8c"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"Failed! Email is already in use!"}'
+        status_message: Bad Request
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:37:49.390998915Z
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1713501469
+curl: |-
+    curl --request POST \
+      --url http://localhost:8080/api/auth/signup \
+      --header 'Host: localhost:8080' \
+      --header 'User-Agent: curl/7.88.1' \
+      --header 'Accept: */*' \
+      --header 'Content-Type: application/json' \
+      --data '{
+        "username":"soni",
+        "email":"son@keploy.io",
+        "password":"1234",
+        "roles":"admin"
+    }'

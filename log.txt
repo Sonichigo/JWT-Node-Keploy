@@ -1,0 +1,536 @@
+API key verified successfully!
+
+       ▓██▓▄
+    ▓▓▓▓██▓█▓▄
+     ████████▓▒
+          ▀▓▓███▄      ▄▄   ▄               ▌
+         ▄▌▌▓▓████▄    ██ ▓█▀  ▄▌▀▄  ▓▓▌▄   ▓█  ▄▌▓▓▌▄ ▌▌   ▓
+       ▓█████████▌▓▓   ██▓█▄  ▓█▄▓▓ ▐█▌  ██ ▓█  █▌  ██  █▌ █▓
+      ▓▓▓▓▀▀▀▀▓▓▓▓▓▓▌  ██  █▓  ▓▌▄▄ ▐█▓▄▓█▀ █▓█ ▀█▄▄█▀   █▓█
+       ▓▌                           ▐█▌                   █▌
+        ▓                                   ENTERPRISE EDITION
+  
+VErsion: 
+Keploy Enterprise -enterprise
+
+🐰 Keploy: 2024-04-19T10:16:17+05:30 	[34mINFO[0m	adding flags for dedup cmd in enterprise
+🐰 Keploy: 2024-04-19T10:16:17+05:30 	[34mINFO[0m	adding flags for generate-tests cmd in enterprise
+🐰 Keploy: 2024-04-19T10:16:17+05:30 	[34mINFO[0m	adding flags for test cmd in enterprise
+🐰 Keploy: 2024-04-19T10:16:17+05:30 	[34mINFO[0m	config file not found; proceeding with flags only
+🐰 Keploy: 2024-04-19T10:16:17+05:30 	[35mDEBUG[0m	provider/cmd.go:308	config has been initialised	{"for cmd": "test", "config": {"path":".","command":"sudo docker-compose up","port":0,"dnsPort":26789,"proxyPort":16789,"debug":true,"disableTele":false,"inDocker":false,"containerName":"jwtSqlApp","networkName":"","buildDelay":30000000000,"test":{"selectedTests":{},"globalNoise":{"global":{},"test-sets":{}},"delay":10,"apiTimeout":5,"coverage":false,"coverageReportPath":"","goCoverage":false,"ignoreOrdering":true,"mongoPassword":"default@123","language":"","removeUnusedMocks":false,"fallBackOnMiss":false},"record":{"filters":[],"recordTimer":0},"configPath":".","bypassRules":[],"enableTesting":false,"generateGithubActions":true,"keployContainer":"keploy-v2","keployNetwork":"keploy-network","cmdType":"native"}}
+🐰 Keploy: 2024-04-19T10:16:17+05:30 	[34mINFO[0m	utils/utils.go:391	Starting keploy in docker with image	{"image:": "ghcr.io/keploy/keploy:v-enterprise"}
+🐰 Keploy: 2024-04-19T10:16:17+05:30 	[35mDEBUG[0m	utils/utils.go:460	running the following command in docker	{"command": "/usr/bin/sh -c sudo docker container run --name keploy-v2 -e BINARY_TO_DOCKER=true -p 16789:16789 --privileged --pid=host -it  -v /home/sonichigi.linux/jwt-sql:/home/sonichigi.linux/jwt-sql -w /home/sonichigi.linux/jwt-sql -v /sys/fs/cgroup:/sys/fs/cgroup -v /sys/kernel/debug:/sys/kernel/debug -v /sys/fs/bpf:/sys/fs/bpf -v /var/run/docker.sock:/var/run/docker.sock -v /home/sonichigi.linux/.keploy-config:/root/.keploy-config -v /home/sonichigi.linux/.keploy:/root/.keploy --rm ghcr.io/keploy/keploy:v-enterprise \"test\" \"-c\" \"sudo docker-compose up\" \"--containerName\" \"jwtSqlApp\" \"--delay\" \"10\" \"-t\" \"test-set-6\" \"--freezeTime\" \"--debug\""}
+API key verified successfully!
+
+       ▓██▓▄
+    ▓▓▓▓██▓█▓▄
+     ████████▓▒
+          ▀▓▓███▄      ▄▄   ▄               ▌
+         ▄▌▌▓▓████▄    ██ ▓█▀  ▄▌▀▄  ▓▓▌▄   ▓█  ▄▌▓▓▌▄ ▌▌   ▓
+       ▓█████████▌▓▓   ██▓█▄  ▓█▄▓▓ ▐█▌  ██ ▓█  █▌  ██  █▌ █▓
+      ▓▓▓▓▀▀▀▀▓▓▓▓▓▓▌  ██  █▓  ▓▌▄▄ ▐█▓▄▓█▀ █▓█ ▀█▄▄█▀   █▓█
+       ▓▌                           ▐█▌                   █▌
+        ▓                                   ENTERPRISE EDITION
+  
+VErsion: 
+Keploy Enterprise -enterprise
+
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	adding flags for test cmd in enterprise
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	adding flags for dedup cmd in enterprise
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	adding flags for generate-tests cmd in enterprise
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	config file not found; proceeding with flags only
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	provider/cmd.go:308	config has been initialised	{"for cmd": "test", "config": {"path":".","command":"sudo docker-compose up","port":0,"dnsPort":26789,"proxyPort":16789,"debug":true,"disableTele":false,"inDocker":true,"containerName":"jwtSqlApp","networkName":"","buildDelay":30000000000,"test":{"selectedTests":{},"globalNoise":{"global":{},"test-sets":{}},"delay":10,"apiTimeout":5,"coverage":false,"coverageReportPath":"","goCoverage":false,"ignoreOrdering":true,"mongoPassword":"default@123","language":"","removeUnusedMocks":false,"fallBackOnMiss":false},"record":{"filters":[],"recordTimer":0},"configPath":".","bypassRules":[],"enableTesting":false,"generateGithubActions":true,"keployContainer":"keploy-v2","keployNetwork":"keploy-network","cmdType":"native"}}
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	provider/cmd.go:337	detected that Keploy is running in a docker container
+🐰 Keploy: 2024-04-19T04:46:21Z 	[33mWARN[0m	provider/cmd.go:366	buildDelay is set to 30s, incase your docker container takes more time to build use --buildDelay to set custom delay
+go.keploy.io/server/v2/cli/provider.(*CmdConfigurator).ValidateFlags
+	/go/pkg/mod/go.keploy.io/server/v2@v2.1.0-alpha8/cli/provider/cmd.go:366
+github.com/keploy/keploy-enterprise-v2/cli/provider.(*CmdConfigurator).ValidateFlags
+	/app/cli/provider/cmd.go:99
+go.keploy.io/server/v2/cli.Test.func1
+	/go/pkg/mod/go.keploy.io/server/v2@v2.1.0-alpha8/cli/test.go:26
+github.com/spf13/cobra.(*Command).execute
+	/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:968
+github.com/spf13/cobra.(*Command).ExecuteC
+	/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:1115
+github.com/spf13/cobra.(*Command).Execute
+	/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:1039
+main.start
+	/app/main.go:177
+main.main
+	/app/main.go:169
+runtime.main
+	/usr/local/go/src/runtime/proc.go:271
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	provider/cmd.go:367	Example usage: keploy record -c "docker-compose up --build" --buildDelay 35s
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	utils/utils.go:275	Generating GitHub Actions workflow file
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	utils/utils.go:312	GitHub Actions workflow file generated successfully	{"path": "/githubactions/keploy.yml"}
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	app/app.go:134	keploy requires docker compose containers to be run with external network
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	app/app.go:231	trying to inject network:keploy-network to the keploy container
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	app/app.go:254	Successfully injected network to the keploy container	{"Keploy container": "keploy-v2", "appNetwork": "keploy-network"}
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	hooks/hooks.go:446	keploy initialized and probes added to the kernel.
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	hooks/hooks.go:469		{"Keploy Inode number": 4026531836}
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	hooks/kernelComm.go:66	Sending keploy pid to kernel	{"pid": 69228}
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	hooks/hooks.go:480	Keploy Pid sent successfully...
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	hooks/kernelComm.go:134	sending dns server port	{"port": 26789}
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	proxy/ca.go:180	Java is not installed on the system
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	proxy/ca.go:180	Java is not installed on the system
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	proxy/proxy.go:123	Starting Tcp Dns Server for handling Dns queries over TCP
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	proxy/proxy.go:149	Starting Udp Dns Server for handling Dns queries over UDP
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	proxy/proxy.go:173	Keploy has taken control of the DNS resolution mechanism, your application may misbehave if you have provided wrong domain name in your application code.
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	proxy/proxy.go:175	Proxy started at port:16789
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	replay/replay.go:248	running	{"test-set": "[38;5;208mtest-set-6[0;25;0m"}
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	proxy/proxy.go:189	Proxy server is listening on :[::]:16789
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	proxy/dns.go:31	starting TCP DNS server at addr :26789
+🐰 Keploy: 2024-04-19T04:46:21Z 	[34mINFO[0m	proxy/dns.go:54	starting UDP DNS server at addr :26789
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	proxy/dns.go:245	Successfully written to nsswitch config of linux
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	app/app.go:370	exiting from goroutine of docker daemon event listener
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	app/app.go:442	env inherited from the cmd	{"env": ["BINARY_TO_DOCKER=true", "HOSTNAME=4f980037d748", "HOME=/root", "KEPLOY_INDOCKER=true", "TERM=xterm", "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin", "PWD=/home/sonichigi.linux/jwt-sql", "LOGNAME=root", "USER=root", "SHELL=/bin/bash", "SUDO_COMMAND=/app/keploy-enterprise test -c sudo docker-compose up --containerName jwtSqlApp --delay 10 -t test-set-6 --freezeTime --debug", "SUDO_USER=root", "SUDO_UID=0", "SUDO_GID=0", "NODE_EXTRA_CA_CERTS=/tmp/ca.crt1265411055", "REQUESTS_CA_BUNDLE=/tmp/ca.crt1265411055"]}
+🐰 Keploy: 2024-04-19T04:46:21Z 	[35mDEBUG[0m	app/app.go:463		{"executing cli": "/usr/bin/sudo -E -u root env PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin sh -c sudo docker-compose up"}
+jwt-sql_postgres_1 is up-to-date
+jwtSqlApp is up-to-date
+Attaching to jwt-sql_postgres_1, jwtSqlApp
+[36mpostgres_1  |[0m The files belonging to this database system will be owned by user "postgres".
+[36mpostgres_1  |[0m This user must also own the server process.
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m The database cluster will be initialized with locale "en_US.utf8".
+[36mpostgres_1  |[0m The default database encoding has accordingly been set to "UTF8".
+[36mpostgres_1  |[0m The default text search configuration will be set to "english".
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m Data page checksums are disabled.
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m fixing permissions on existing directory /var/lib/postgresql/data ... ok
+[36mpostgres_1  |[0m creating subdirectories ... ok
+[36mpostgres_1  |[0m selecting default max_connections ... 100
+[36mpostgres_1  |[0m selecting default shared_buffers ... 128MB
+[36mpostgres_1  |[0m selecting dynamic shared memory implementation ... posix
+[36mpostgres_1  |[0m creating configuration files ... ok
+[36mpostgres_1  |[0m running bootstrap script ... ok
+[36mpostgres_1  |[0m performing post-bootstrap initialization ... ok
+[36mpostgres_1  |[0m syncing data to disk ... ok
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m Success. You can now start the database server using:
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m     pg_ctl -D /var/lib/postgresql/data -l logfile start
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m WARNING: enabling "trust" authentication for local connections
+[36mpostgres_1  |[0m You can change this by editing pg_hba.conf or using the option -A, or
+[36mpostgres_1  |[0m --auth-local and --auth-host, the next time you run initdb.
+[36mpostgres_1  |[0m waiting for server to start....2024-04-19 04:28:34.071 UTC [42] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.083 UTC [43] LOG:  database system was shut down at 2024-04-19 04:28:33 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.089 UTC [42] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m  done
+[36mpostgres_1  |[0m server started
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m waiting for server to shut down....2024-04-19 04:28:34.155 UTC [42] LOG:  received fast shutdown request
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.158 UTC [42] LOG:  aborting any active transactions
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.160 UTC [42] LOG:  worker process: logical replication launcher (PID 49) exited with exit code 1
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.160 UTC [44] LOG:  shutting down
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.173 UTC [42] LOG:  database system is shut down
+[36mpostgres_1  |[0m  done
+[36mpostgres_1  |[0m server stopped
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m PostgreSQL init process complete; ready for start up.
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.265 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.265 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.269 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.279 UTC [51] LOG:  database system was shut down at 2024-04-19 04:28:34 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.282 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.669 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.669 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.672 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.684 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 04:28:34 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.887 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.889 UTC [23] LOG:  redo starts at 0/1633A88
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.890 UTC [23] LOG:  invalid record length at 0/1633AC0: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.890 UTC [23] LOG:  redo done at 0/1633A88
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.900 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.583 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.583 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.589 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.602 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 04:36:19 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.788 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.790 UTC [23] LOG:  redo starts at 0/1666210
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.790 UTC [23] LOG:  invalid record length at 0/16662F0: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.790 UTC [23] LOG:  redo done at 0/16662B8
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.801 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.622 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.622 UTC [31] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.622 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.625 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.625 UTC [31] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.625 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.629 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.629 UTC [31] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.629 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.753 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.753 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.756 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.773 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 04:39:13 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.958 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  redo starts at 0/1666360
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  invalid record length at 0/1666B78: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  redo done at 0/1666B40
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  last completed transaction was at log time 2024-04-19 04:39:57.541851+00
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.971 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.608 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.608 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.613 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.625 UTC [24] LOG:  database system was interrupted; last known up at 2024-04-19 04:43:07 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.807 UTC [24] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.809 UTC [24] LOG:  redo starts at 0/1666BE8
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.809 UTC [24] LOG:  invalid record length at 0/1666C20: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.809 UTC [24] LOG:  redo done at 0/1666BE8
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.821 UTC [1] LOG:  database system is ready to accept connections
+[33mjwtSqlApp   |[0m Server is running on port 8080.
+[33mjwtSqlApp   |[0m Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'users'
+[33mjwtSqlApp   |[0m Executing (default): CREATE TABLE IF NOT EXISTS "users" ("id"   SERIAL , "username" VARCHAR(255), "email" VARCHAR(255), "password" VARCHAR(255), "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+[33mjwtSqlApp   |[0m Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'users' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+[33mjwtSqlApp   |[0m Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'roles'
+[33mjwtSqlApp   |[0m Executing (default): CREATE TABLE IF NOT EXISTS "roles" ("id" INTEGER , "name" VARCHAR(255), "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+[33mjwtSqlApp   |[0m Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'roles' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+[33mjwtSqlApp   |[0m Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'user_roles'
+[33mjwtSqlApp   |[0m Executing (default): CREATE TABLE IF NOT EXISTS "user_roles" ("createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, "roleId" INTEGER  REFERENCES "roles" ("id") ON DELETE CASCADE ON UPDATE CASCADE, "userId" INTEGER  REFERENCES "users" ("id") ON DELETE CASCADE ON UPDATE CASCADE, PRIMARY KEY ("roleId","userId"));
+[33mjwtSqlApp   |[0m Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'user_roles' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+[33mjwtSqlApp   |[0m Synchronized Db
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'sarthak016' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."email" = 'sarthak@keploy.io' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "users" ("id","username","email","password","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","username","email","password","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): SELECT "createdAt", "updatedAt", "roleId", "userId" FROM "user_roles" AS "user_roles" WHERE "user_roles"."userId" = 1;
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "user_roles" ("createdAt","updatedAt","roleId","userId") VALUES ('2024-04-19 04:45:29.348 +00:00','2024-04-19 04:45:29.348 +00:00',1,1) RETURNING "createdAt","updatedAt","roleId","userId";
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'sarthak016' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "roles"."id", "roles"."name", "roles"."createdAt", "roles"."updatedAt", "user_roles"."createdAt" AS "user_roles.createdAt", "user_roles"."updatedAt" AS "user_roles.updatedAt", "user_roles"."roleId" AS "user_roles.roleId", "user_roles"."userId" AS "user_roles.userId" FROM "roles" AS "roles" INNER JOIN "user_roles" AS "user_roles" ON "roles"."id" = "user_roles"."roleId" AND "user_roles"."userId" = 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."id" = 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "roles"."id", "roles"."name", "roles"."createdAt", "roles"."updatedAt", "user_roles"."createdAt" AS "user_roles.createdAt", "user_roles"."updatedAt" AS "user_roles.updatedAt", "user_roles"."roleId" AS "user_roles.roleId", "user_roles"."userId" AS "user_roles.userId" FROM "roles" AS "roles" INNER JOIN "user_roles" AS "user_roles" ON "roles"."id" = "user_roles"."roleId" AND "user_roles"."userId" = 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'sarthak016' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'son' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."email" = 'son@keploy.io' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "users" ("id","username","email","password","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","username","email","password","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): SELECT "createdAt", "updatedAt", "roleId", "userId" FROM "user_roles" AS "user_roles" WHERE "user_roles"."userId" = 2;
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "user_roles" ("createdAt","updatedAt","roleId","userId") VALUES ('2024-04-19 04:45:29.633 +00:00','2024-04-19 04:45:29.633 +00:00',1,2) RETURNING "createdAt","updatedAt","roleId","userId";
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'son' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "roles"."id", "roles"."name", "roles"."createdAt", "roles"."updatedAt", "user_roles"."createdAt" AS "user_roles.createdAt", "user_roles"."updatedAt" AS "user_roles.updatedAt", "user_roles"."roleId" AS "user_roles.roleId", "user_roles"."userId" AS "user_roles.userId" FROM "roles" AS "roles" INNER JOIN "user_roles" AS "user_roles" ON "roles"."id" = "user_roles"."roleId" AND "user_roles"."userId" = 2;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."id" = 2;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "roles"."id", "roles"."name", "roles"."createdAt", "roles"."updatedAt", "user_roles"."createdAt" AS "user_roles.createdAt", "user_roles"."updatedAt" AS "user_roles.updatedAt", "user_roles"."roleId" AS "user_roles.roleId", "user_roles"."userId" AS "user_roles.userId" FROM "roles" AS "roles" INNER JOIN "user_roles" AS "user_roles" ON "roles"."id" = "user_roles"."roleId" AND "user_roles"."userId" = 2;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'soni' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."email" = 'son@keploy.io' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'soni' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."email" = 'soni@keploy.io' LIMIT 1;
+🐰 Keploy: 2024-04-19T04:46:32Z 	[31mERROR[0m	utils/utils.go:112	failed to replace host to docker container's IP	{"error": "failed to replace url in case of docker env"}
+go.keploy.io/server/v2/utils.LogError
+	/go/pkg/mod/go.keploy.io/server/v2@v2.1.0-alpha8/utils/utils.go:112
+go.keploy.io/server/v2/pkg/service/replay.(*Replayer).RunTestSet
+	/go/pkg/mod/go.keploy.io/server/v2@v2.1.0-alpha8/pkg/service/replay/replay.go:413
+go.keploy.io/server/v2/pkg/service/replay.(*Replayer).Start
+	/go/pkg/mod/go.keploy.io/server/v2@v2.1.0-alpha8/pkg/service/replay/replay.go:131
+github.com/keploy/keploy-enterprise-v2/pkg/service/test.(*replayer).Start
+	/app/pkg/service/test/test.go:29
+go.keploy.io/server/v2/cli.Test.func2
+	/go/pkg/mod/go.keploy.io/server/v2@v2.1.0-alpha8/cli/test.go:57
+github.com/spf13/cobra.(*Command).execute
+	/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:983
+github.com/spf13/cobra.(*Command).ExecuteC
+	/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:1115
+github.com/spf13/cobra.(*Command).Execute
+	/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:1039
+main.start
+	/app/main.go:177
+main.main
+	/app/main.go:169
+runtime.main
+	/usr/local/go/src/runtime/proc.go:271
+🐰 Keploy: 2024-04-19T04:46:32Z 	[31mERROR[0m	utils/utils.go:112	failed to get test case results	{"error": "🐰 Keploy: found no test results for test report with id: test-run-14"}
+go.keploy.io/server/v2/utils.LogError
+	/go/pkg/mod/go.keploy.io/server/v2@v2.1.0-alpha8/utils/utils.go:112
+go.keploy.io/server/v2/pkg/service/replay.(*Replayer).RunTestSet
+	/go/pkg/mod/go.keploy.io/server/v2@v2.1.0-alpha8/pkg/service/replay/replay.go:506
+go.keploy.io/server/v2/pkg/service/replay.(*Replayer).Start
+	/go/pkg/mod/go.keploy.io/server/v2@v2.1.0-alpha8/pkg/service/replay/replay.go:131
+github.com/keploy/keploy-enterprise-v2/pkg/service/test.(*replayer).Start
+	/app/pkg/service/test/test.go:29
+go.keploy.io/server/v2/cli.Test.func2
+	/go/pkg/mod/go.keploy.io/server/v2@v2.1.0-alpha8/cli/test.go:57
+github.com/spf13/cobra.(*Command).execute
+	/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:983
+github.com/spf13/cobra.(*Command).ExecuteC
+	/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:1115
+github.com/spf13/cobra.(*Command).Execute
+	/go/pkg/mod/github.com/spf13/cobra@v1.8.0/command.go:1039
+main.start
+	/app/main.go:177
+main.main
+	/app/main.go:169
+runtime.main
+	/usr/local/go/src/runtime/proc.go:271
+🐰 Keploy: 2024-04-19T04:46:32Z 	[35mDEBUG[0m	app/app.go:349	context cancelled, stopping the listener for container creation event.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 1216, in up
+    cascade_starter = log_printer.run()
+                      ^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/compose/cli/log_printer.py", line 88, in run
+    for line in consume_queue(queue, self.cascade_stop):
+  File "/usr/lib/python3/dist-packages/compose/cli/log_printer.py", line 241, in consume_queue
+    item = queue.get(timeout=0.1)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/usr/lib/python3.11/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/compose/cli/signals.py", line 15, in shutdown
+    raise ShutdownException()
+compose.cli.signals.ShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 81, in main
+    command_func()
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 203, in perform_command
+    handler(command, command_options)
+  File "/usr/lib/python3/dist-packages/compose/metrics/decorator.py", line 18, in wrapper
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 1162, in up
+    with up_shutdown_context(self.project, service_names, timeout, detached):
+  File "/usr/lib/python3.11/contextlib.py", line 141, in __exit__
+    def __exit__(self, typ, value, traceback):
+
+  File "/usr/lib/python3/dist-packages/compose/cli/signals.py", line 15, in shutdown
+    raise ShutdownException()
+compose.cli.signals.ShutdownException
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/bin/docker-compose", line 33, in <module>
+    sys.exit(load_entry_point('docker-compose==1.29.2', 'console_scripts', 'docker-compose')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 85, in main
+    exit_with_metrics(command, "Aborting.", status=Status.CANCELED)
+  File "/usr/lib/python3/dist-packages/compose/cli/main.py", line 145, in exit_with_metrics
+    log.error(log_msg)
+  File "/usr/lib/python3.11/logging/__init__.py", line 1518, in error
+    self._log(ERROR, msg, args, **kwargs)
+  File "/usr/lib/python3.11/logging/__init__.py", line 1632, in _log
+    record = self.makeRecord(self.name, level, fn, lno, msg, args,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/logging/__init__.py", line 1601, in makeRecord
+    rv = _logRecordFactory(name, level, fn, lno, msg, args, exc_info, func,
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/logging/__init__.py", line 326, in __init__
+    self.filename = os.path.basename(pathname)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen posixpath>", line 144, in basename
+  File "/usr/lib/python3/dist-packages/compose/cli/signals.py", line 15, in shutdown
+    raise ShutdownException()
+compose.cli.signals.ShutdownException
+🐰 Keploy: 2024-04-19T04:46:32Z 	[35mDEBUG[0m	app/app.go:473	context cancelled, error while waiting for the app to exit	{"error": "context canceled"}
+🐰 Keploy: 2024-04-19T04:46:32Z 	[34mINFO[0m	utils/ctx.go:58	stopping Keploy	{"reason": "replay completed successfully"}
+🐰 Keploy: 2024-04-19T04:46:32Z 	[35mDEBUG[0m	proxy/dns.go:260	Successfully reset the nsswitch config of linux
+🐰 Keploy: 2024-04-19T04:46:32Z 	[34mINFO[0m	proxy/proxy.go:197	proxy stopped...
+🐰 Keploy: 2024-04-19T04:46:33Z 	[34mINFO[0m	hooks/hooks.go:602	eBPF resources released successfully...
+🐰 Keploy: 2024-04-19T10:16:33+05:30 	[34mINFO[0m	utils/docker.go:81	exiting the current process as the command is moved to docker
+API key verified successfully!
+
+       ▓██▓▄
+    ▓▓▓▓██▓█▓▄
+     ████████▓▒
+          ▀▓▓███▄      ▄▄   ▄               ▌
+         ▄▌▌▓▓████▄    ██ ▓█▀  ▄▌▀▄  ▓▓▌▄   ▓█  ▄▌▓▓▌▄ ▌▌   ▓
+       ▓█████████▌▓▓   ██▓█▄  ▓█▄▓▓ ▐█▌  ██ ▓█  █▌  ██  █▌ █▓
+      ▓▓▓▓▀▀▀▀▓▓▓▓▓▓▌  ██  █▓  ▓▌▄▄ ▐█▓▄▓█▀ █▓█ ▀█▄▄█▀   █▓█
+       ▓▌                           ▐█▌                   █▌
+        ▓                                   ENTERPRISE EDITION
+  
+VErsion: 
+Keploy Enterprise -enterprise
+
+🐰 Keploy: 2024-04-19T10:16:48+05:30 	[34mINFO[0m	adding flags for test cmd in enterprise
+🐰 Keploy: 2024-04-19T10:16:48+05:30 	[34mINFO[0m	adding flags for dedup cmd in enterprise
+🐰 Keploy: 2024-04-19T10:16:48+05:30 	[34mINFO[0m	adding flags for generate-tests cmd in enterprise
+🐰 Keploy: 2024-04-19T10:16:48+05:30 	[34mINFO[0m	config file not found; proceeding with flags only
+🐰 Keploy: 2024-04-19T10:16:48+05:30 	[34mINFO[0m	Starting keploy in docker with image	{"image:": "ghcr.io/keploy/keploy:v-enterprise"}
+API key verified successfully!
+
+       ▓██▓▄
+    ▓▓▓▓██▓█▓▄
+     ████████▓▒
+          ▀▓▓███▄      ▄▄   ▄               ▌
+         ▄▌▌▓▓████▄    ██ ▓█▀  ▄▌▀▄  ▓▓▌▄   ▓█  ▄▌▓▓▌▄ ▌▌   ▓
+       ▓█████████▌▓▓   ██▓█▄  ▓█▄▓▓ ▐█▌  ██ ▓█  █▌  ██  █▌ █▓
+      ▓▓▓▓▀▀▀▀▓▓▓▓▓▓▌  ██  █▓  ▓▌▄▄ ▐█▓▄▓█▀ █▓█ ▀█▄▄█▀   █▓█
+       ▓▌                           ▐█▌                   █▌
+        ▓                                   ENTERPRISE EDITION
+  
+VErsion: 
+Keploy Enterprise -enterprise
+
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	adding flags for test cmd in enterprise
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	adding flags for dedup cmd in enterprise
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	adding flags for generate-tests cmd in enterprise
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	config file not found; proceeding with flags only
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	detected that Keploy is running in a docker container
+🐰 Keploy: 2024-04-19T04:46:52Z 	[33mWARN[0m	buildDelay is set to 30s, incase your docker container takes more time to build use --buildDelay to set custom delay
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	Example usage: keploy record -c "docker-compose up --build" --buildDelay 35s
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	GitHub Actions workflow file generated successfully	{"path": "/githubactions/keploy.yml"}
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	keploy requires docker compose containers to be run with external network
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	trying to inject network:keploy-network to the keploy container
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	Successfully injected network to the keploy container	{"Keploy container": "keploy-v2", "appNetwork": "keploy-network"}
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	keploy initialized and probes added to the kernel.
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	Keploy has taken control of the DNS resolution mechanism, your application may misbehave if you have provided wrong domain name in your application code.
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	Proxy started at port:16789
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	running	{"test-set": "[38;5;208mtest-set-6[0;25;0m"}
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	starting TCP DNS server at addr :26789
+🐰 Keploy: 2024-04-19T04:46:52Z 	[34mINFO[0m	starting UDP DNS server at addr :26789
+jwt-sql_postgres_1 is up-to-date
+jwtSqlApp is up-to-date
+Attaching to jwt-sql_postgres_1, jwtSqlApp
+[36mpostgres_1  |[0m The files belonging to this database system will be owned by user "postgres".
+[36mpostgres_1  |[0m This user must also own the server process.
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m The database cluster will be initialized with locale "en_US.utf8".
+[36mpostgres_1  |[0m The default database encoding has accordingly been set to "UTF8".
+[36mpostgres_1  |[0m The default text search configuration will be set to "english".
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m Data page checksums are disabled.
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m fixing permissions on existing directory /var/lib/postgresql/data ... ok
+[36mpostgres_1  |[0m creating subdirectories ... ok
+[36mpostgres_1  |[0m selecting default max_connections ... 100
+[36mpostgres_1  |[0m selecting default shared_buffers ... 128MB
+[36mpostgres_1  |[0m selecting dynamic shared memory implementation ... posix
+[36mpostgres_1  |[0m creating configuration files ... ok
+[36mpostgres_1  |[0m running bootstrap script ... ok
+[36mpostgres_1  |[0m performing post-bootstrap initialization ... ok
+[36mpostgres_1  |[0m syncing data to disk ... ok
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m Success. You can now start the database server using:
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m     pg_ctl -D /var/lib/postgresql/data -l logfile start
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m WARNING: enabling "trust" authentication for local connections
+[36mpostgres_1  |[0m You can change this by editing pg_hba.conf or using the option -A, or
+[36mpostgres_1  |[0m --auth-local and --auth-host, the next time you run initdb.
+[36mpostgres_1  |[0m waiting for server to start....2024-04-19 04:28:34.071 UTC [42] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.083 UTC [43] LOG:  database system was shut down at 2024-04-19 04:28:33 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.089 UTC [42] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m  done
+[36mpostgres_1  |[0m server started
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m waiting for server to shut down....2024-04-19 04:28:34.155 UTC [42] LOG:  received fast shutdown request
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.158 UTC [42] LOG:  aborting any active transactions
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.160 UTC [42] LOG:  worker process: logical replication launcher (PID 49) exited with exit code 1
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.160 UTC [44] LOG:  shutting down
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.173 UTC [42] LOG:  database system is shut down
+[36mpostgres_1  |[0m  done
+[36mpostgres_1  |[0m server stopped
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m PostgreSQL init process complete; ready for start up.
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.265 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.265 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.269 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.279 UTC [51] LOG:  database system was shut down at 2024-04-19 04:28:34 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.282 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.669 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.669 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.672 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.684 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 04:28:34 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.887 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.889 UTC [23] LOG:  redo starts at 0/1633A88
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.890 UTC [23] LOG:  invalid record length at 0/1633AC0: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.890 UTC [23] LOG:  redo done at 0/1633A88
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.900 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.583 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.583 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.589 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.602 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 04:36:19 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.788 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.790 UTC [23] LOG:  redo starts at 0/1666210
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.790 UTC [23] LOG:  invalid record length at 0/16662F0: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.790 UTC [23] LOG:  redo done at 0/16662B8
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.801 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.622 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.622 UTC [31] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.622 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.625 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.625 UTC [31] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.625 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.629 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.629 UTC [31] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.629 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.753 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.753 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.756 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.773 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 04:39:13 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.958 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  redo starts at 0/1666360
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  invalid record length at 0/1666B78: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  redo done at 0/1666B40
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  last completed transaction was at log time 2024-04-19 04:39:57.541851+00
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.971 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.608 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.608 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.613 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.625 UTC [24] LOG:  database system was interrupted; last known up at 2024-04-19 04:43:07 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.807 UTC [24] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.809 UTC [24] LOG:  redo starts at 0/1666BE8
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.809 UTC [24] LOG:  invalid record length at 0/1666C20: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.809 UTC [24] LOG:  redo done at 0/1666BE8
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.821 UTC [1] LOG:  database system is ready to accept connections
+[33mjwtSqlApp   |[0m Server is running on port 8080.
+[33mjwtSqlApp   |[0m Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'users'
+[33mjwtSqlApp   |[0m Executing (default): CREATE TABLE IF NOT EXISTS "users" ("id"   SERIAL , "username" VARCHAR(255), "email" VARCHAR(255), "password" VARCHAR(255), "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+[33mjwtSqlApp   |[0m Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'users' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+[33mjwtSqlApp   |[0m Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'roles'
+[33mjwtSqlApp   |[0m Executing (default): CREATE TABLE IF NOT EXISTS "roles" ("id" INTEGER , "name" VARCHAR(255), "createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, PRIMARY KEY ("id"));
+[33mjwtSqlApp   |[0m Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'roles' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+[33mjwtSqlApp   |[0m Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'user_roles'
+[33mjwtSqlApp   |[0m Executing (default): CREATE TABLE IF NOT EXISTS "user_roles" ("createdAt" TIMESTAMP WITH TIME ZONE NOT NULL, "updatedAt" TIMESTAMP WITH TIME ZONE NOT NULL, "roleId" INTEGER  REFERENCES "roles" ("id") ON DELETE CASCADE ON UPDATE CASCADE, "userId" INTEGER  REFERENCES "users" ("id") ON DELETE CASCADE ON UPDATE CASCADE, PRIMARY KEY ("roleId","userId"));
+[33mjwtSqlApp   |[0m Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'user_roles' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+[33mjwtSqlApp   |[0m Synchronized Db
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'sarthak016' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."email" = 'sarthak@keploy.io' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "users" ("id","username","email","password","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","username","email","password","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): SELECT "createdAt", "updatedAt", "roleId", "userId" FROM "user_roles" AS "user_roles" WHERE "user_roles"."userId" = 1;
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "user_roles" ("createdAt","updatedAt","roleId","userId") VALUES ('2024-04-19 04:45:29.348 +00:00','2024-04-19 04:45:29.348 +00:00',1,1) RETURNING "createdAt","updatedAt","roleId","userId";
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'sarthak016' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "roles"."id", "roles"."name", "roles"."createdAt", "roles"."updatedAt", "user_roles"."createdAt" AS "user_roles.createdAt", "user_roles"."updatedAt" AS "user_roles.updatedAt", "user_roles"."roleId" AS "user_roles.roleId", "user_roles"."userId" AS "user_roles.userId" FROM "roles" AS "roles" INNER JOIN "user_roles" AS "user_roles" ON "roles"."id" = "user_roles"."roleId" AND "user_roles"."userId" = 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."id" = 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "roles"."id", "roles"."name", "roles"."createdAt", "roles"."updatedAt", "user_roles"."createdAt" AS "user_roles.createdAt", "user_roles"."updatedAt" AS "user_roles.updatedAt", "user_roles"."roleId" AS "user_roles.roleId", "user_roles"."userId" AS "user_roles.userId" FROM "roles" AS "roles" INNER JOIN "user_roles" AS "user_roles" ON "roles"."id" = "user_roles"."roleId" AND "user_roles"."userId" = 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'sarthak016' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'son' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."email" = 'son@keploy.io' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "users" ("id","username","email","password","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4,$5) RETURNING "id","username","email","password","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): SELECT "createdAt", "updatedAt", "roleId", "userId" FROM "user_roles" AS "user_roles" WHERE "user_roles"."userId" = 2;
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "user_roles" ("createdAt","updatedAt","roleId","userId") VALUES ('2024-04-19 04:45:29.633 +00:00','2024-04-19 04:45:29.633 +00:00',1,2) RETURNING "createdAt","updatedAt","roleId","userId";
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'son' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "roles"."id", "roles"."name", "roles"."createdAt", "roles"."updatedAt", "user_roles"."createdAt" AS "user_roles.createdAt", "user_roles"."updatedAt" AS "user_roles.updatedAt", "user_roles"."roleId" AS "user_roles.roleId", "user_roles"."userId" AS "user_roles.userId" FROM "roles" AS "roles" INNER JOIN "user_roles" AS "user_roles" ON "roles"."id" = "user_roles"."roleId" AND "user_roles"."userId" = 2;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."id" = 2;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "roles"."id", "roles"."name", "roles"."createdAt", "roles"."updatedAt", "user_roles"."createdAt" AS "user_roles.createdAt", "user_roles"."updatedAt" AS "user_roles.updatedAt", "user_roles"."roleId" AS "user_roles.roleId", "user_roles"."userId" AS "user_roles.userId" FROM "roles" AS "roles" INNER JOIN "user_roles" AS "user_roles" ON "roles"."id" = "user_roles"."roleId" AND "user_roles"."userId" = 2;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'soni' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."email" = 'son@keploy.io' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'soni' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."email" = 'soni@keploy.io' LIMIT 1;
+🐰 Keploy: 2024-04-19T04:47:03Z 	[31mERROR[0m	failed to replace host to docker container's IP	{"error": "failed to replace url in case of docker env"}
+🐰 Keploy: 2024-04-19T04:47:03Z 	[31mERROR[0m	failed to get test case results	{"error": "🐰 Keploy: found no test results for test report with id: test-run-15"}
+Killing jwtSqlApp          ... 
+Killing jwt-sql_postgres_1 ... 
+[2A[2KKilling jwtSqlApp          ... [32mdone[0m[2B[1A[2KKilling jwt-sql_postgres_1 ... [32mdone[0m[1B[31mERROR[0m: 2
+Gracefully stopping... (press Ctrl+C again to force)
+🐰 Keploy: 2024-04-19T04:47:03Z 	[34mINFO[0m	stopping Keploy	{"reason": "replay completed successfully"}
+🐰 Keploy: 2024-04-19T04:47:03Z 	[34mINFO[0m	proxy stopped...
+🐰 Keploy: 2024-04-19T04:47:04Z 	[34mINFO[0m	eBPF resources released successfully...
+🐰 Keploy: 2024-04-19T10:17:04+05:30 	[34mINFO[0m	exiting the current process as the command is moved to docker

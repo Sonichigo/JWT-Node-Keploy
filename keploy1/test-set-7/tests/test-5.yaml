@@ -1,0 +1,47 @@
+version: api.keploy.io/v1beta1
+kind: Http
+name: test-5
+spec:
+    metadata: {}
+    req:
+        method: GET
+        proto_major: 1
+        proto_minor: 1
+        url: http://localhost:8080/api/test/admin
+        header:
+            Accept: '*/*'
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+            X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzEzNTAxNjIwLCJleHAiOjE3MTM1ODgwMjB9.rnPnlBj2Q2MSS87tvrfU8aZYK0LTH9DemmKTZMyvQDo
+        body: ""
+        timestamp: 2024-04-19T04:42:20.615307161Z
+    resp:
+        status_code: 403
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "33"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:42:20 GMT
+            Etag: W/"21-gJAHz/3ltoRSM1Lfi4co8rvPVXU"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"Require Admin Role!"}'
+        status_message: Forbidden
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:42:22.638839839Z
+    objects: []
+    assertions:
+        noise:
+            header.Date: []
+    created: 1713501742
+curl: |
+    curl --request GET \
+      --url http://localhost:8080/api/test/admin \
+      --header 'X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzEzNTAxNjIwLCJleHAiOjE3MTM1ODgwMjB9.rnPnlBj2Q2MSS87tvrfU8aZYK0LTH9DemmKTZMyvQDo' \
+      --header 'Host: localhost:8080' \
+      --header 'User-Agent: curl/7.88.1' \
+      --header 'Accept: */*' \

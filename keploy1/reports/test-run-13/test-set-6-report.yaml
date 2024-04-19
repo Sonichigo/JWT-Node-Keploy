@@ -1,0 +1,1390 @@
+version: api.keploy.io/v1beta1
+name: test-set-6-report
+status: FAILED
+success: 7
+failure: 2
+total: 9
+tests:
+    - kind: Http
+      name: test-set-6
+      status: PASSED
+      started: 1713501929
+      completed: 1713501929
+      test_case_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6
+      mock_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6/mocks.yaml
+      test_case_id: test-1
+      req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://172.21.0.4:8080/api/auth/signup
+        header:
+            Accept: '*/*'
+            Content-Length: "87"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+        body: |-
+            {
+                "username":"sarthak016",
+                "email":"sarthak@keploy.io",
+                "password":"1234"
+            }
+        timestamp: 2024-04-19T04:31:20.535674655Z
+      resp:
+        status_code: 200
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "47"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:31:20 GMT
+            Etag: W/"2f-ycIOj/6kXGxPaEoiW5+ikfXgO5w"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"User was registered successfully!"}'
+        status_message: OK
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:31:22.661565834Z
+      noise:
+        header.Date: []
+      result:
+        status_code:
+            normal: true
+            expected: 200
+            actual: 200
+        headers_result:
+            - normal: true
+              expected:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:31:20 GMT
+              actual:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:45:29 GMT
+            - normal: true
+              expected:
+                key: Etag
+                value:
+                    - W/"2f-ycIOj/6kXGxPaEoiW5+ikfXgO5w"
+              actual:
+                key: Etag
+                value:
+                    - W/"2f-ycIOj/6kXGxPaEoiW5+ikfXgO5w"
+            - normal: true
+              expected:
+                key: X-Powered-By
+                value:
+                    - Express
+              actual:
+                key: X-Powered-By
+                value:
+                    - Express
+            - normal: true
+              expected:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+              actual:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+            - normal: true
+              expected:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+              actual:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+            - normal: true
+              expected:
+                key: Vary
+                value:
+                    - Origin
+              actual:
+                key: Vary
+                value:
+                    - Origin
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+              actual:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+            - normal: true
+              expected:
+                key: Content-Length
+                value:
+                    - "47"
+              actual:
+                key: Content-Length
+                value:
+                    - "47"
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+              actual:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+            - normal: true
+              expected:
+                key: Connection
+                value:
+                    - keep-alive
+              actual:
+                key: Connection
+                value:
+                    - keep-alive
+        body_result:
+            - normal: true
+              type: JSON
+              expected: '{"message":"User was registered successfully!"}'
+              actual: '{"message":"User was registered successfully!"}'
+        dep_result: []
+    - kind: Http
+      name: test-set-6
+      status: FAILED
+      started: 1713501929
+      completed: 1713501929
+      test_case_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6
+      mock_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6/mocks.yaml
+      test_case_id: test-2
+      req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://172.21.0.4:8080/api/auth/signin
+        header:
+            Accept: '*/*'
+            Content-Length: "87"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+        body: |-
+            {
+                "username":"sarthak016",
+                "email":"sarthak@keploy.io",
+                "password":"1234"
+            }
+        timestamp: 2024-04-19T04:31:47.828023779Z
+      resp:
+        status_code: 200
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "236"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:31:47 GMT
+            Etag: W/"ec-YXvkCg95C7N/Sgvmpwk5mH4Ff/I"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"id":1,"username":"sarthak016","email":"sarthak@keploy.io","roles":["ROLE_USER"],"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNTAxMTA3LCJleHAiOjE3MTM1ODc1MDd9.fI_NOuYc1L9xgCwu50r685n4rDN0KUG8dA1yT1nmz4U"}'
+        status_message: OK
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:31:49.893338792Z
+      noise:
+        header.Date: []
+      result:
+        status_code:
+            normal: true
+            expected: 200
+            actual: 200
+        headers_result:
+            - normal: true
+              expected:
+                key: Connection
+                value:
+                    - keep-alive
+              actual:
+                key: Connection
+                value:
+                    - keep-alive
+            - normal: true
+              expected:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+              actual:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+            - normal: true
+              expected:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:31:47 GMT
+              actual:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:45:29 GMT
+            - normal: true
+              expected:
+                key: Vary
+                value:
+                    - Origin
+              actual:
+                key: Vary
+                value:
+                    - Origin
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+              actual:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+            - normal: true
+              expected:
+                key: Content-Length
+                value:
+                    - "236"
+              actual:
+                key: Content-Length
+                value:
+                    - "236"
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+              actual:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+            - normal: true
+              expected:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+              actual:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+            - normal: true
+              expected:
+                key: X-Powered-By
+                value:
+                    - Express
+              actual:
+                key: X-Powered-By
+                value:
+                    - Express
+            - normal: false
+              expected:
+                key: Etag
+                value:
+                    - W/"ec-YXvkCg95C7N/Sgvmpwk5mH4Ff/I"
+              actual:
+                key: Etag
+                value:
+                    - W/"ec-bNe4DJ9MTOoFwSsgV6QW0xsyzVc"
+        body_result:
+            - normal: false
+              type: JSON
+              expected: '{"id":1,"username":"sarthak016","email":"sarthak@keploy.io","roles":["ROLE_USER"],"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNTAxMTA3LCJleHAiOjE3MTM1ODc1MDd9.fI_NOuYc1L9xgCwu50r685n4rDN0KUG8dA1yT1nmz4U"}'
+              actual: '{"id":1,"username":"sarthak016","email":"sarthak@keploy.io","roles":["ROLE_USER"],"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNTAxOTI5LCJleHAiOjE3MTM1ODgzMjl9.IseoKa0Letcq2fKPX2oJ3_sX6XpP2qEfgMOlUyMTpDE"}'
+        dep_result: []
+    - kind: Http
+      name: test-set-6
+      status: PASSED
+      started: 1713501929
+      completed: 1713501929
+      test_case_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6
+      mock_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6/mocks.yaml
+      test_case_id: test-3
+      req:
+        method: PUT
+        proto_major: 1
+        proto_minor: 1
+        url: http://172.21.0.4:8080/api/user/1/updateRole
+        header:
+            Accept: '*/*'
+            Content-Length: "17"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+            X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzEzNTAxMTA3LCJleHAiOjE3MTM1ODc1MDd9.fI_NOuYc1L9xgCwu50r685n4rDN0KUG8dA1yT1nmz4U
+        body: '{"role": "admin"}'
+        timestamp: 2024-04-19T04:33:04.072141995Z
+      resp:
+        status_code: 403
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "33"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:33:04 GMT
+            Etag: W/"21-gJAHz/3ltoRSM1Lfi4co8rvPVXU"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"Require Admin Role!"}'
+        status_message: Forbidden
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:33:06.107029041Z
+      noise:
+        header.Date: []
+      result:
+        status_code:
+            normal: true
+            expected: 403
+            actual: 403
+        headers_result:
+            - normal: true
+              expected:
+                key: Vary
+                value:
+                    - Origin
+              actual:
+                key: Vary
+                value:
+                    - Origin
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+              actual:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+            - normal: true
+              expected:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:33:04 GMT
+              actual:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:45:29 GMT
+            - normal: true
+              expected:
+                key: Etag
+                value:
+                    - W/"21-gJAHz/3ltoRSM1Lfi4co8rvPVXU"
+              actual:
+                key: Etag
+                value:
+                    - W/"21-gJAHz/3ltoRSM1Lfi4co8rvPVXU"
+            - normal: true
+              expected:
+                key: X-Powered-By
+                value:
+                    - Express
+              actual:
+                key: X-Powered-By
+                value:
+                    - Express
+            - normal: true
+              expected:
+                key: Content-Length
+                value:
+                    - "33"
+              actual:
+                key: Content-Length
+                value:
+                    - "33"
+            - normal: true
+              expected:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+              actual:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+            - normal: true
+              expected:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+              actual:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+              actual:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+            - normal: true
+              expected:
+                key: Connection
+                value:
+                    - keep-alive
+              actual:
+                key: Connection
+                value:
+                    - keep-alive
+        body_result:
+            - normal: true
+              type: JSON
+              expected: '{"message":"Require Admin Role!"}'
+              actual: '{"message":"Require Admin Role!"}'
+        dep_result: []
+    - kind: Http
+      name: test-set-6
+      status: PASSED
+      started: 1713501929
+      completed: 1713501929
+      test_case_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6
+      mock_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6/mocks.yaml
+      test_case_id: test-4
+      req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://172.21.0.4:8080/api/auth/signup
+        header:
+            Accept: '*/*'
+            Content-Length: "87"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+        body: |-
+            {
+                "username":"sarthak016",
+                "email":"sarthak@keploy.io",
+                "password":"1234"
+            }
+        timestamp: 2024-04-19T04:35:14.58990831Z
+      resp:
+        status_code: 400
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "49"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:35:14 GMT
+            Etag: W/"31-RSWLzta9RAquoHRNRt/jwk0o5Bw"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"Failed! Username is already in use!"}'
+        status_message: Bad Request
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:35:16.602498558Z
+      noise:
+        header.Date: []
+      result:
+        status_code:
+            normal: true
+            expected: 400
+            actual: 400
+        headers_result:
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+              actual:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+            - normal: true
+              expected:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+              actual:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+              actual:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+            - normal: true
+              expected:
+                key: Etag
+                value:
+                    - W/"31-RSWLzta9RAquoHRNRt/jwk0o5Bw"
+              actual:
+                key: Etag
+                value:
+                    - W/"31-RSWLzta9RAquoHRNRt/jwk0o5Bw"
+            - normal: true
+              expected:
+                key: Content-Length
+                value:
+                    - "49"
+              actual:
+                key: Content-Length
+                value:
+                    - "49"
+            - normal: true
+              expected:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:35:14 GMT
+              actual:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:45:29 GMT
+            - normal: true
+              expected:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+              actual:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+            - normal: true
+              expected:
+                key: X-Powered-By
+                value:
+                    - Express
+              actual:
+                key: X-Powered-By
+                value:
+                    - Express
+            - normal: true
+              expected:
+                key: Vary
+                value:
+                    - Origin
+              actual:
+                key: Vary
+                value:
+                    - Origin
+            - normal: true
+              expected:
+                key: Connection
+                value:
+                    - keep-alive
+              actual:
+                key: Connection
+                value:
+                    - keep-alive
+        body_result:
+            - normal: true
+              type: JSON
+              expected: '{"message":"Failed! Username is already in use!"}'
+              actual: '{"message":"Failed! Username is already in use!"}'
+        dep_result: []
+    - kind: Http
+      name: test-set-6
+      status: PASSED
+      started: 1713501929
+      completed: 1713501929
+      test_case_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6
+      mock_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6/mocks.yaml
+      test_case_id: test-5
+      req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://172.21.0.4:8080/api/auth/signup
+        header:
+            Accept: '*/*'
+            Content-Length: "96"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+        body: |-
+            {
+                "username":"son",
+                "email":"son@keploy.io",
+                "password":"1234",
+                "role":"admin"
+            }
+        timestamp: 2024-04-19T04:36:07.067930287Z
+      resp:
+        status_code: 200
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "47"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:36:07 GMT
+            Etag: W/"2f-ycIOj/6kXGxPaEoiW5+ikfXgO5w"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"User was registered successfully!"}'
+        status_message: OK
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:36:09.133621343Z
+      noise:
+        header.Date: []
+      result:
+        status_code:
+            normal: true
+            expected: 200
+            actual: 200
+        headers_result:
+            - normal: true
+              expected:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:36:07 GMT
+              actual:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:45:29 GMT
+            - normal: true
+              expected:
+                key: X-Powered-By
+                value:
+                    - Express
+              actual:
+                key: X-Powered-By
+                value:
+                    - Express
+            - normal: true
+              expected:
+                key: Etag
+                value:
+                    - W/"2f-ycIOj/6kXGxPaEoiW5+ikfXgO5w"
+              actual:
+                key: Etag
+                value:
+                    - W/"2f-ycIOj/6kXGxPaEoiW5+ikfXgO5w"
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+              actual:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+              actual:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+            - normal: true
+              expected:
+                key: Content-Length
+                value:
+                    - "47"
+              actual:
+                key: Content-Length
+                value:
+                    - "47"
+            - normal: true
+              expected:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+              actual:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+            - normal: true
+              expected:
+                key: Connection
+                value:
+                    - keep-alive
+              actual:
+                key: Connection
+                value:
+                    - keep-alive
+            - normal: true
+              expected:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+              actual:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+            - normal: true
+              expected:
+                key: Vary
+                value:
+                    - Origin
+              actual:
+                key: Vary
+                value:
+                    - Origin
+        body_result:
+            - normal: true
+              type: JSON
+              expected: '{"message":"User was registered successfully!"}'
+              actual: '{"message":"User was registered successfully!"}'
+        dep_result: []
+    - kind: Http
+      name: test-set-6
+      status: FAILED
+      started: 1713501929
+      completed: 1713501929
+      test_case_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6
+      mock_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6/mocks.yaml
+      test_case_id: test-6
+      req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://172.21.0.4:8080/api/auth/signin
+        header:
+            Accept: '*/*'
+            Content-Length: "96"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+        body: |-
+            {
+                "username":"son",
+                "email":"son@keploy.io",
+                "password":"1234",
+                "role":"admin"
+            }
+        timestamp: 2024-04-19T04:36:32.286687383Z
+      resp:
+        status_code: 200
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "225"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:36:32 GMT
+            Etag: W/"e1-s/ZWt321u+qoCW2CHbFDruw3WOU"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"id":2,"username":"son","email":"son@keploy.io","roles":["ROLE_USER"],"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzEzNTAxMzkyLCJleHAiOjE3MTM1ODc3OTJ9.pt_HtYbZScevs1hg2iUkHPyw2WbZIFiQWBqNwmoH400"}'
+        status_message: OK
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:36:34.389403727Z
+      noise:
+        header.Date: []
+      result:
+        status_code:
+            normal: true
+            expected: 200
+            actual: 200
+        headers_result:
+            - normal: true
+              expected:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+              actual:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+            - normal: true
+              expected:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:36:32 GMT
+              actual:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:45:29 GMT
+            - normal: true
+              expected:
+                key: Vary
+                value:
+                    - Origin
+              actual:
+                key: Vary
+                value:
+                    - Origin
+            - normal: true
+              expected:
+                key: Content-Length
+                value:
+                    - "225"
+              actual:
+                key: Content-Length
+                value:
+                    - "225"
+            - normal: true
+              expected:
+                key: Connection
+                value:
+                    - keep-alive
+              actual:
+                key: Connection
+                value:
+                    - keep-alive
+            - normal: false
+              expected:
+                key: Etag
+                value:
+                    - W/"e1-s/ZWt321u+qoCW2CHbFDruw3WOU"
+              actual:
+                key: Etag
+                value:
+                    - W/"e1-7RhYCCGdJ00UGWLjRhRNKqaHnSM"
+            - normal: true
+              expected:
+                key: X-Powered-By
+                value:
+                    - Express
+              actual:
+                key: X-Powered-By
+                value:
+                    - Express
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+              actual:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+              actual:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+            - normal: true
+              expected:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+              actual:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+        body_result:
+            - normal: false
+              type: JSON
+              expected: '{"id":2,"username":"son","email":"son@keploy.io","roles":["ROLE_USER"],"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzEzNTAxMzkyLCJleHAiOjE3MTM1ODc3OTJ9.pt_HtYbZScevs1hg2iUkHPyw2WbZIFiQWBqNwmoH400"}'
+              actual: '{"id":2,"username":"son","email":"son@keploy.io","roles":["ROLE_USER"],"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzEzNTAxOTI5LCJleHAiOjE3MTM1ODgzMjl9.S-voaWtvbcAfT8l5fjopiker3eBQprFXE2SbClb-sLk"}'
+        dep_result: []
+    - kind: Http
+      name: test-set-6
+      status: PASSED
+      started: 1713501929
+      completed: 1713501929
+      test_case_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6
+      mock_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6/mocks.yaml
+      test_case_id: test-7
+      req:
+        method: PUT
+        proto_major: 1
+        proto_minor: 1
+        url: http://172.21.0.4:8080/api/user/1/updateRole
+        header:
+            Accept: '*/*'
+            Content-Length: "17"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+            X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzEzNTAxMzkyLCJleHAiOjE3MTM1ODc3OTJ9.pt_HtYbZScevs1hg2iUkHPyw2WbZIFiQWBqNwmoH400
+        body: '{"role": "admin"}'
+        timestamp: 2024-04-19T04:37:27.159899869Z
+      resp:
+        status_code: 403
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "33"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:37:27 GMT
+            Etag: W/"21-gJAHz/3ltoRSM1Lfi4co8rvPVXU"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"Require Admin Role!"}'
+        status_message: Forbidden
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:37:29.209853043Z
+      noise:
+        header.Date: []
+      result:
+        status_code:
+            normal: true
+            expected: 403
+            actual: 403
+        headers_result:
+            - normal: true
+              expected:
+                key: Vary
+                value:
+                    - Origin
+              actual:
+                key: Vary
+                value:
+                    - Origin
+            - normal: true
+              expected:
+                key: Content-Length
+                value:
+                    - "33"
+              actual:
+                key: Content-Length
+                value:
+                    - "33"
+            - normal: true
+              expected:
+                key: Etag
+                value:
+                    - W/"21-gJAHz/3ltoRSM1Lfi4co8rvPVXU"
+              actual:
+                key: Etag
+                value:
+                    - W/"21-gJAHz/3ltoRSM1Lfi4co8rvPVXU"
+            - normal: true
+              expected:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+              actual:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+            - normal: true
+              expected:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:37:27 GMT
+              actual:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:45:29 GMT
+            - normal: true
+              expected:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+              actual:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+            - normal: true
+              expected:
+                key: X-Powered-By
+                value:
+                    - Express
+              actual:
+                key: X-Powered-By
+                value:
+                    - Express
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+              actual:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+            - normal: true
+              expected:
+                key: Connection
+                value:
+                    - keep-alive
+              actual:
+                key: Connection
+                value:
+                    - keep-alive
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+              actual:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+        body_result:
+            - normal: true
+              type: JSON
+              expected: '{"message":"Require Admin Role!"}'
+              actual: '{"message":"Require Admin Role!"}'
+        dep_result: []
+    - kind: Http
+      name: test-set-6
+      status: PASSED
+      started: 1713501929
+      completed: 1713501929
+      test_case_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6
+      mock_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6/mocks.yaml
+      test_case_id: test-8
+      req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://172.21.0.4:8080/api/auth/signup
+        header:
+            Accept: '*/*'
+            Content-Length: "98"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+        body: |-
+            {
+                "username":"soni",
+                "email":"son@keploy.io",
+                "password":"1234",
+                "roles":"admin"
+            }
+        timestamp: 2024-04-19T04:37:47.299159979Z
+      resp:
+        status_code: 400
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "46"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:37:47 GMT
+            Etag: W/"2e-5Pa5gWq67HmNOAPolkdUjFcVB8c"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"Failed! Email is already in use!"}'
+        status_message: Bad Request
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:37:49.390998915Z
+      noise:
+        header.Date: []
+      result:
+        status_code:
+            normal: true
+            expected: 400
+            actual: 400
+        headers_result:
+            - normal: true
+              expected:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+              actual:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+            - normal: true
+              expected:
+                key: Etag
+                value:
+                    - W/"2e-5Pa5gWq67HmNOAPolkdUjFcVB8c"
+              actual:
+                key: Etag
+                value:
+                    - W/"2e-5Pa5gWq67HmNOAPolkdUjFcVB8c"
+            - normal: true
+              expected:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:37:47 GMT
+              actual:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:45:29 GMT
+            - normal: true
+              expected:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+              actual:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+              actual:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+            - normal: true
+              expected:
+                key: Connection
+                value:
+                    - keep-alive
+              actual:
+                key: Connection
+                value:
+                    - keep-alive
+            - normal: true
+              expected:
+                key: Vary
+                value:
+                    - Origin
+              actual:
+                key: Vary
+                value:
+                    - Origin
+            - normal: true
+              expected:
+                key: X-Powered-By
+                value:
+                    - Express
+              actual:
+                key: X-Powered-By
+                value:
+                    - Express
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+              actual:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+            - normal: true
+              expected:
+                key: Content-Length
+                value:
+                    - "46"
+              actual:
+                key: Content-Length
+                value:
+                    - "46"
+        body_result:
+            - normal: true
+              type: JSON
+              expected: '{"message":"Failed! Email is already in use!"}'
+              actual: '{"message":"Failed! Email is already in use!"}'
+        dep_result: []
+    - kind: Http
+      name: test-set-6
+      status: PASSED
+      started: 1713501929
+      completed: 1713501929
+      test_case_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6
+      mock_path: /home/sonichigi.linux/jwt-sql/keploy/test-set-6/mocks.yaml
+      test_case_id: test-9
+      req:
+        method: POST
+        proto_major: 1
+        proto_minor: 1
+        url: http://172.21.0.4:8080/api/auth/signup
+        header:
+            Accept: '*/*'
+            Content-Length: "99"
+            Content-Type: application/json
+            Host: localhost:8080
+            User-Agent: curl/7.88.1
+        body: |-
+            {
+                "username":"soni",
+                "email":"soni@keploy.io",
+                "password":"1234",
+                "roles":"admin"
+            }
+        timestamp: 2024-04-19T04:37:59.759226502Z
+      resp:
+        status_code: 400
+        header:
+            Access-Control-Allow-Headers: x-access-token, Origin, Content-Type, Accept
+            Access-Control-Allow-Origin: http://localhost:8081
+            Connection: keep-alive
+            Content-Length: "45"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 04:37:59 GMT
+            Etag: W/"2d-E/ftquevj8ehdPqyE1ftPdruxIg"
+            Keep-Alive: timeout=5
+            Vary: Origin
+            X-Powered-By: Express
+        body: '{"message":"Failed! Role does not exist = a"}'
+        status_message: Bad Request
+        proto_major: 0
+        proto_minor: 0
+        timestamp: 2024-04-19T04:38:01.819732784Z
+      noise:
+        header.Date: []
+      result:
+        status_code:
+            normal: true
+            expected: 400
+            actual: 400
+        headers_result:
+            - normal: true
+              expected:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:37:59 GMT
+              actual:
+                key: Date
+                value:
+                    - Fri, 19 Apr 2024 04:45:29 GMT
+            - normal: true
+              expected:
+                key: Content-Length
+                value:
+                    - "45"
+              actual:
+                key: Content-Length
+                value:
+                    - "45"
+            - normal: true
+              expected:
+                key: Etag
+                value:
+                    - W/"2d-E/ftquevj8ehdPqyE1ftPdruxIg"
+              actual:
+                key: Etag
+                value:
+                    - W/"2d-E/ftquevj8ehdPqyE1ftPdruxIg"
+            - normal: true
+              expected:
+                key: X-Powered-By
+                value:
+                    - Express
+              actual:
+                key: X-Powered-By
+                value:
+                    - Express
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+              actual:
+                key: Access-Control-Allow-Headers
+                value:
+                    - x-access-token
+                    - ' Origin'
+                    - ' Content-Type'
+                    - ' Accept'
+            - normal: true
+              expected:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+              actual:
+                key: Access-Control-Allow-Origin
+                value:
+                    - http://localhost:8081
+            - normal: true
+              expected:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+              actual:
+                key: Content-Type
+                value:
+                    - application/json; charset=utf-8
+            - normal: true
+              expected:
+                key: Connection
+                value:
+                    - keep-alive
+              actual:
+                key: Connection
+                value:
+                    - keep-alive
+            - normal: true
+              expected:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+              actual:
+                key: Keep-Alive
+                value:
+                    - timeout=5
+            - normal: true
+              expected:
+                key: Vary
+                value:
+                    - Origin
+              actual:
+                key: Vary
+                value:
+                    - Origin
+        body_result:
+            - normal: true
+              type: JSON
+              expected: '{"message":"Failed! Role does not exist = a"}'
+              actual: '{"message":"Failed! Role does not exist = a"}'
+        dep_result: []
+test_set: test-set-6
