@@ -4,65 +4,44 @@ name: test-1
 spec:
     metadata: {}
     req:
-        method: POST
+        method: GET
         proto_major: 1
         proto_minor: 1
-        url: http://localhost:8080/api/auth/signin
+        url: http://localhost:8080/api/users
         header:
             Accept: '*/*'
-            Content-Length: "77"
-            Content-Type: application/json
             Host: localhost:8080
             User-Agent: curl/7.88.1
-        body: |-
-            {
-                "username":"son",
-                "email":"son@keploy.io",
-                "password":"1234",
-            }
-        timestamp: 2024-04-19T06:10:01.339931337Z
+        body: ""
+        timestamp: 2024-04-19T06:54:13.855851567Z
     resp:
-        status_code: 400
+        status_code: 200
         header:
+            Access-Control-Allow-Headers: Origin, Content-Type, Accept
             Access-Control-Allow-Origin: http://localhost:8081
             Connection: keep-alive
-            Content-Length: "966"
-            Content-Security-Policy: default-src 'none'
-            Content-Type: text/html; charset=utf-8
-            Date: Fri, 19 Apr 2024 06:10:01 GMT
+            Content-Length: "413"
+            Content-Type: application/json; charset=utf-8
+            Date: Fri, 19 Apr 2024 06:54:13 GMT
+            Etag: W/"19d-T6mZZma3SoKO4S2SievPlYKNj8w"
             Keep-Alive: timeout=5
             Vary: Origin
-            X-Content-Type-Options: nosniff
             X-Powered-By: Express
-        body: |
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-            <meta charset="utf-8">
-            <title>Error</title>
-            </head>
-            <body>
-            <pre>SyntaxError: Unexpected token } in JSON at position 76<br> &nbsp; &nbsp;at JSON.parse (&lt;anonymous&gt;)<br> &nbsp; &nbsp;at parse (/usr/src/app/node_modules/body-parser/lib/types/json.js:92:19)<br> &nbsp; &nbsp;at /usr/src/app/node_modules/body-parser/lib/read.js:128:18<br> &nbsp; &nbsp;at AsyncResource.runInAsyncScope (node:async_hooks:203:9)<br> &nbsp; &nbsp;at invokeCallback (/usr/src/app/node_modules/raw-body/index.js:238:16)<br> &nbsp; &nbsp;at done (/usr/src/app/node_modules/raw-body/index.js:227:7)<br> &nbsp; &nbsp;at IncomingMessage.onEnd (/usr/src/app/node_modules/raw-body/index.js:287:7)<br> &nbsp; &nbsp;at IncomingMessage.emit (node:events:517:28)<br> &nbsp; &nbsp;at endReadableNT (node:internal/streams/readable:1400:12)<br> &nbsp; &nbsp;at process.processTicksAndRejections (node:internal/process/task_queues:82:21)</pre>
-            </body>
-            </html>
-        status_message: Bad Request
+        body: '[{"id":36,"username":"admin","email":"admin@keploy.io","password":"$2a$08$D6MjJCvq1scNcshktZLpc.CF7sCctBVjWV3WZqQQApdazadh9lO8i","createdAt":"2024-04-19T06:01:56.254Z","updatedAt":"2024-04-19T06:01:56.254Z"},{"id":38,"username":"sono","email":"son0@keploy.io","password":"$2a$08$7jSGcQVgeVmkCKIHErwER.RHRXIcGiIe8mhxkkWqy7TIEe6s4bdHK","createdAt":"2024-04-19T06:22:55.253Z","updatedAt":"2024-04-19T06:22:55.253Z"}]'
+        status_message: OK
         proto_major: 0
         proto_minor: 0
-        timestamp: 2024-04-19T06:10:03.386536531Z
+        timestamp: 2024-04-19T06:54:15.981646002Z
     objects: []
     assertions:
         noise:
+            body.createdAt: []
+            body.updatedAt: []
             header.Date: []
-    created: 1713507003
-curl: |-
-    curl --request POST \
-      --url http://localhost:8080/api/auth/signin \
+    created: 1713509655
+curl: |
+    curl --request GET \
+      --url http://localhost:8080/api/users \
       --header 'Host: localhost:8080' \
       --header 'User-Agent: curl/7.88.1' \
       --header 'Accept: */*' \
-      --header 'Content-Type: application/json' \
-      --data '{
-        "username":"son",
-        "email":"son@keploy.io",
-        "password":"1234",
-    }'

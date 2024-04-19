@@ -1,0 +1,495 @@
+API key verified successfully!
+
+       ▓██▓▄
+    ▓▓▓▓██▓█▓▄
+     ████████▓▒
+          ▀▓▓███▄      ▄▄   ▄               ▌
+         ▄▌▌▓▓████▄    ██ ▓█▀  ▄▌▀▄  ▓▓▌▄   ▓█  ▄▌▓▓▌▄ ▌▌   ▓
+       ▓█████████▌▓▓   ██▓█▄  ▓█▄▓▓ ▐█▌  ██ ▓█  █▌  ██  █▌ █▓
+      ▓▓▓▓▀▀▀▀▓▓▓▓▓▓▌  ██  █▓  ▓▌▄▄ ▐█▓▄▓█▀ █▓█ ▀█▄▄█▀   █▓█
+       ▓▌                           ▐█▌                   █▌
+        ▓                                   ENTERPRISE EDITION
+  
+VErsion: 
+Keploy Enterprise -enterprise
+
+🐰 Keploy: 2024-04-19T12:50:21+05:30 	[34mINFO[0m	adding flags for test cmd in enterprise
+🐰 Keploy: 2024-04-19T12:50:21+05:30 	[34mINFO[0m	adding flags for dedup cmd in enterprise
+🐰 Keploy: 2024-04-19T12:50:21+05:30 	[34mINFO[0m	adding flags for generate-tests cmd in enterprise
+🐰 Keploy: 2024-04-19T12:50:21+05:30 	[34mINFO[0m	config file not found; proceeding with flags only
+🐰 Keploy: 2024-04-19T12:50:21+05:30 	[34mINFO[0m	Starting keploy in docker with image	{"image:": "ghcr.io/keploy/keploy:v-enterprise"}
+API key verified successfully!
+
+       ▓██▓▄
+    ▓▓▓▓██▓█▓▄
+     ████████▓▒
+          ▀▓▓███▄      ▄▄   ▄               ▌
+         ▄▌▌▓▓████▄    ██ ▓█▀  ▄▌▀▄  ▓▓▌▄   ▓█  ▄▌▓▓▌▄ ▌▌   ▓
+       ▓█████████▌▓▓   ██▓█▄  ▓█▄▓▓ ▐█▌  ██ ▓█  █▌  ██  █▌ █▓
+      ▓▓▓▓▀▀▀▀▓▓▓▓▓▓▌  ██  █▓  ▓▌▄▄ ▐█▓▄▓█▀ █▓█ ▀█▄▄█▀   █▓█
+       ▓▌                           ▐█▌                   █▌
+        ▓                                   ENTERPRISE EDITION
+  
+VErsion: 
+Keploy Enterprise -enterprise
+
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	adding flags for test cmd in enterprise
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	adding flags for dedup cmd in enterprise
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	adding flags for generate-tests cmd in enterprise
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	config file not found; proceeding with flags only
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	detected that Keploy is running in a docker container
+🐰 Keploy: 2024-04-19T07:20:24Z 	[33mWARN[0m	buildDelay is set to 30s, incase your docker container takes more time to build use --buildDelay to set custom delay
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	Example usage: keploy record -c "docker-compose up --build" --buildDelay 35s
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	GitHub Actions workflow file generated successfully	{"path": "/githubactions/keploy.yml"}
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	keploy requires docker compose containers to be run with external network
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	trying to inject network:keploy-network to the keploy container
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	Successfully injected network to the keploy container	{"Keploy container": "keploy-v2", "appNetwork": "keploy-network"}
+🐰 Keploy: 2024-04-19T07:20:24Z 	[34mINFO[0m	keploy initialized and probes added to the kernel.
+🐰 Keploy: 2024-04-19T07:20:25Z 	[34mINFO[0m	Keploy has taken control of the DNS resolution mechanism, your application may misbehave if you have provided wrong domain name in your application code.
+🐰 Keploy: 2024-04-19T07:20:25Z 	[34mINFO[0m	Proxy started at port:16789
+🐰 Keploy: 2024-04-19T07:20:25Z 	[34mINFO[0m	running	{"test-set": "[38;5;208mtest-set-3[0;25;0m"}
+🐰 Keploy: 2024-04-19T07:20:25Z 	[34mINFO[0m	starting TCP DNS server at addr :26789
+🐰 Keploy: 2024-04-19T07:20:25Z 	[34mINFO[0m	starting UDP DNS server at addr :26789
+Building node-app
+Sending build context to Docker daemon  557.1kBSending build context to Docker daemon  2.228MBSending build context to Docker daemon  3.342MBSending build context to Docker daemon  5.014MBSending build context to Docker daemon  6.128MBSending build context to Docker daemon  7.799MBSending build context to Docker daemon   9.47MBSending build context to Docker daemon  11.14MBSending build context to Docker daemon  16.71MBSending build context to Docker daemon  18.94MBSending build context to Docker daemon  20.61MBSending build context to Docker daemon  22.84MBSending build context to Docker daemon  28.41MBSending build context to Docker daemon  33.42MBSending build context to Docker daemon  37.32MBSending build context to Docker daemon  38.99MBSending build context to Docker daemon  40.36MB
+Step 1/11 : FROM node:18
+ ---> c61cf9fa52ec
+Step 2/11 : RUN apt-get update &&     apt-get install -y --no-install-recommends ca-certificates &&     rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> 7117bb64a716
+Step 3/11 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> 23e3a1a4b5e7
+Step 4/11 : COPY package*.json ./
+ ---> Using cache
+ ---> d4e3da7fd097
+Step 5/11 : RUN npm install
+ ---> Using cache
+ ---> 2b211d1fad2a
+Step 6/11 : ADD https://keploy-enterprise.s3.us-west-2.amazonaws.com/releases/latest/assets/freeze_time_arm64.so /lib/keploy/freeze_time_arm64.so
+[2KDownloading  8.352kB/16.85kB[2KDownloading  16.85kB/16.85kB
+ ---> Using cache
+ ---> d62bcce02490
+Step 7/11 : RUN chmod +x /lib/keploy/freeze_time_arm64.so
+ ---> Using cache
+ ---> 2d23d94d7c3f
+Step 8/11 : ENV LD_PRELOAD=/lib/keploy/freeze_time_arm64.so
+ ---> Using cache
+ ---> 75d1ac60aa15
+Step 9/11 : COPY . .
+ ---> 6da18ac98c56
+Step 10/11 : EXPOSE 8080
+ ---> Running in fc86c129b546
+Removing intermediate container fc86c129b546
+ ---> 4e37641c6d7b
+Step 11/11 : CMD [ "node", "app.js" ]
+ ---> Running in 610bc3d0536b
+Removing intermediate container 610bc3d0536b
+ ---> fec6c8072906
+Successfully built fec6c8072906
+Successfully tagged jwt-sql_node-app:latest
+[33mWARNING[0m: Image for service node-app was built because it did not already exist. To rebuild this image you must use `docker-compose build` or `docker-compose up --build`.
+jwt-sql_postgres_1 is up-to-date
+Creating jwtSqlApp ... 
+[1A[2KCreating jwtSqlApp ... [32mdone[0m[1BAttaching to jwt-sql_postgres_1, jwtSqlApp
+[36mpostgres_1  |[0m The files belonging to this database system will be owned by user "postgres".
+[36mpostgres_1  |[0m This user must also own the server process.
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m The database cluster will be initialized with locale "en_US.utf8".
+[36mpostgres_1  |[0m The default database encoding has accordingly been set to "UTF8".
+[36mpostgres_1  |[0m The default text search configuration will be set to "english".
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m Data page checksums are disabled.
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m fixing permissions on existing directory /var/lib/postgresql/data ... ok
+[36mpostgres_1  |[0m creating subdirectories ... ok
+[36mpostgres_1  |[0m selecting default max_connections ... 100
+[36mpostgres_1  |[0m selecting default shared_buffers ... 128MB
+[36mpostgres_1  |[0m selecting dynamic shared memory implementation ... posix
+[36mpostgres_1  |[0m creating configuration files ... ok
+[36mpostgres_1  |[0m running bootstrap script ... ok
+[36mpostgres_1  |[0m performing post-bootstrap initialization ... ok
+[36mpostgres_1  |[0m syncing data to disk ... ok
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m Success. You can now start the database server using:
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m     pg_ctl -D /var/lib/postgresql/data -l logfile start
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m WARNING: enabling "trust" authentication for local connections
+[36mpostgres_1  |[0m You can change this by editing pg_hba.conf or using the option -A, or
+[36mpostgres_1  |[0m --auth-local and --auth-host, the next time you run initdb.
+[36mpostgres_1  |[0m waiting for server to start....2024-04-19 04:28:34.071 UTC [42] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.083 UTC [43] LOG:  database system was shut down at 2024-04-19 04:28:33 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.089 UTC [42] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m  done
+[36mpostgres_1  |[0m server started
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m waiting for server to shut down....2024-04-19 04:28:34.155 UTC [42] LOG:  received fast shutdown request
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.158 UTC [42] LOG:  aborting any active transactions
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.160 UTC [42] LOG:  worker process: logical replication launcher (PID 49) exited with exit code 1
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.160 UTC [44] LOG:  shutting down
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.173 UTC [42] LOG:  database system is shut down
+[36mpostgres_1  |[0m  done
+[36mpostgres_1  |[0m server stopped
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m PostgreSQL init process complete; ready for start up.
+[36mpostgres_1  |[0m 
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.265 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.265 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.269 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.279 UTC [51] LOG:  database system was shut down at 2024-04-19 04:28:34 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:28:34.282 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.669 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.669 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.672 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.684 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 04:28:34 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.887 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.889 UTC [23] LOG:  redo starts at 0/1633A88
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.890 UTC [23] LOG:  invalid record length at 0/1633AC0: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.890 UTC [23] LOG:  redo done at 0/1633A88
+[36mpostgres_1  |[0m 2024-04-19 04:31:11.900 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.583 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.583 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.589 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.602 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 04:36:19 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.788 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.790 UTC [23] LOG:  redo starts at 0/1666210
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.790 UTC [23] LOG:  invalid record length at 0/16662F0: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.790 UTC [23] LOG:  redo done at 0/16662B8
+[36mpostgres_1  |[0m 2024-04-19 04:39:13.801 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.622 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.622 UTC [31] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.622 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.625 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.625 UTC [31] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.625 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.629 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.629 UTC [31] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 04:39:14.629 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.753 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.753 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.756 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.773 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 04:39:13 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.958 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  redo starts at 0/1666360
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  invalid record length at 0/1666B78: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  redo done at 0/1666B40
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.961 UTC [23] LOG:  last completed transaction was at log time 2024-04-19 04:39:57.541851+00
+[36mpostgres_1  |[0m 2024-04-19 04:43:07.971 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.608 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.608 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.613 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.625 UTC [24] LOG:  database system was interrupted; last known up at 2024-04-19 04:43:07 UTC
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.807 UTC [24] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.809 UTC [24] LOG:  redo starts at 0/1666BE8
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.809 UTC [24] LOG:  invalid record length at 0/1666C20: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.809 UTC [24] LOG:  redo done at 0/1666BE8
+[36mpostgres_1  |[0m 2024-04-19 04:45:24.821 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 05:53:58.559 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 05:53:58.559 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 05:53:58.562 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 05:53:58.572 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 04:45:24 UTC
+[36mpostgres_1  |[0m 2024-04-19 05:53:58.714 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 05:53:58.716 UTC [23] LOG:  redo starts at 0/1666C90
+[36mpostgres_1  |[0m 2024-04-19 05:53:58.716 UTC [23] LOG:  invalid record length at 0/1666CC8: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 05:53:58.716 UTC [23] LOG:  redo done at 0/1666C90
+[36mpostgres_1  |[0m 2024-04-19 05:53:58.729 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 05:54:07.585 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 05:54:07.585 UTC [31] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 05:54:07.585 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 05:54:07.592 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 05:54:07.592 UTC [31] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 05:54:07.592 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 05:54:07.594 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 05:54:07.594 UTC [31] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 05:54:07.594 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 05:56:03.137 UTC [37] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 05:56:03.137 UTC [37] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 05:56:03.137 UTC [37] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 05:56:03.141 UTC [37] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 05:56:03.141 UTC [37] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 05:56:03.141 UTC [37] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 05:56:03.142 UTC [37] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 05:56:03.142 UTC [37] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 05:56:03.142 UTC [37] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 05:56:46.809 UTC [41] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 05:56:46.809 UTC [41] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 05:56:46.809 UTC [41] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 05:56:46.811 UTC [41] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 05:56:46.811 UTC [41] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 05:56:46.811 UTC [41] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 05:56:46.813 UTC [41] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 05:56:46.813 UTC [41] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 05:56:46.813 UTC [41] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:00:10.822 UTC [49] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:00:10.822 UTC [49] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:00:10.822 UTC [49] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:00:10.826 UTC [49] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:00:10.826 UTC [49] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:00:10.826 UTC [49] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:00:10.827 UTC [49] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:00:10.827 UTC [49] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:00:10.827 UTC [49] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:08:49.028 UTC [65] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:08:49.028 UTC [65] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:08:49.028 UTC [65] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:08:49.035 UTC [65] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:08:49.035 UTC [65] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:08:49.035 UTC [65] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:08:49.040 UTC [65] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:08:49.040 UTC [65] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:08:49.040 UTC [65] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:09:37.674 UTC [70] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:09:37.674 UTC [70] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:09:37.674 UTC [70] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:09:37.678 UTC [70] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:09:37.678 UTC [70] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:09:37.678 UTC [70] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:09:37.680 UTC [70] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:09:37.680 UTC [70] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:09:37.680 UTC [70] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:16:10.616 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 06:16:10.616 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 06:16:10.619 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 06:16:10.630 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 06:13:59 UTC
+[36mpostgres_1  |[0m 2024-04-19 06:16:10.796 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 06:16:10.798 UTC [23] LOG:  redo starts at 0/1669778
+[36mpostgres_1  |[0m 2024-04-19 06:16:10.798 UTC [23] LOG:  invalid record length at 0/1669D00: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 06:16:10.798 UTC [23] LOG:  redo done at 0/1669CC8
+[36mpostgres_1  |[0m 2024-04-19 06:16:10.798 UTC [23] LOG:  last completed transaction was at log time 2024-04-19 06:14:26.583175+00
+[36mpostgres_1  |[0m 2024-04-19 06:16:10.813 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 06:22:24.619 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 06:22:24.619 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 06:22:24.623 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 06:22:24.647 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 06:16:10 UTC
+[36mpostgres_1  |[0m 2024-04-19 06:22:24.878 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 06:22:24.881 UTC [23] LOG:  invalid record length at 0/1669D70: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 06:22:24.881 UTC [23] LOG:  redo is not required
+[36mpostgres_1  |[0m 2024-04-19 06:22:24.897 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 06:22:25.947 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:22:25.947 UTC [31] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:22:25.947 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:22:25.950 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:22:25.950 UTC [31] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:22:25.950 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:22:25.952 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:22:25.952 UTC [31] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:22:25.952 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:35:36.619 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 06:35:36.619 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 06:35:36.622 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 06:35:36.632 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 06:27:25 UTC
+[36mpostgres_1  |[0m 2024-04-19 06:35:36.811 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 06:35:36.814 UTC [23] LOG:  redo starts at 0/166AE60
+[36mpostgres_1  |[0m 2024-04-19 06:35:36.814 UTC [23] LOG:  invalid record length at 0/166AF40: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 06:35:36.814 UTC [23] LOG:  redo done at 0/166AF08
+[36mpostgres_1  |[0m 2024-04-19 06:35:36.834 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 06:35:37.584 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:35:37.584 UTC [31] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:35:37.584 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:35:37.587 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:35:37.587 UTC [31] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:35:37.587 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:35:37.588 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:35:37.588 UTC [31] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:35:37.588 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:44:47.500 UTC [47] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:44:47.500 UTC [47] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:44:47.500 UTC [47] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:44:47.503 UTC [47] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:44:47.503 UTC [47] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:44:47.503 UTC [47] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:44:47.507 UTC [47] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:44:47.507 UTC [47] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:44:47.507 UTC [47] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:54:01.032 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 06:54:01.032 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 06:54:01.040 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 06:54:01.050 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 06:50:36 UTC
+[36mpostgres_1  |[0m 2024-04-19 06:54:01.248 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 06:54:01.250 UTC [23] LOG:  redo starts at 0/166C860
+[36mpostgres_1  |[0m 2024-04-19 06:54:01.250 UTC [23] LOG:  invalid record length at 0/166C940: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 06:54:01.250 UTC [23] LOG:  redo done at 0/166C908
+[36mpostgres_1  |[0m 2024-04-19 06:54:01.262 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 06:54:02.207 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:54:02.207 UTC [31] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:54:02.207 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:54:02.210 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:54:02.210 UTC [31] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:54:02.210 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 06:54:02.213 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 06:54:02.213 UTC [31] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 06:54:02.213 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 07:03:36.973 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 07:03:36.973 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 07:03:36.975 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 07:03:36.984 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 06:54:01 UTC
+[36mpostgres_1  |[0m 2024-04-19 07:03:37.171 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 07:03:37.174 UTC [23] LOG:  redo starts at 0/166C9B0
+[36mpostgres_1  |[0m 2024-04-19 07:03:37.174 UTC [23] LOG:  invalid record length at 0/166DD20: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 07:03:37.174 UTC [23] LOG:  redo done at 0/166DCE8
+[36mpostgres_1  |[0m 2024-04-19 07:03:37.174 UTC [23] LOG:  last completed transaction was at log time 2024-04-19 06:57:01.705098+00
+[36mpostgres_1  |[0m 2024-04-19 07:03:37.188 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 07:03:38.056 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 07:03:38.056 UTC [31] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 07:03:38.056 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 07:03:38.060 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 07:03:38.060 UTC [31] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 07:03:38.060 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 07:03:38.065 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 07:03:38.065 UTC [31] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 07:03:38.065 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 07:10:16.607 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 07:10:16.607 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 07:10:16.610 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 07:10:16.623 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 07:03:37 UTC
+[36mpostgres_1  |[0m 2024-04-19 07:10:16.825 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 07:10:16.827 UTC [23] LOG:  redo starts at 0/166DD90
+[36mpostgres_1  |[0m 2024-04-19 07:10:16.827 UTC [23] LOG:  invalid record length at 0/166E808: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 07:10:16.827 UTC [23] LOG:  redo done at 0/166E7D0
+[36mpostgres_1  |[0m 2024-04-19 07:10:16.827 UTC [23] LOG:  last completed transaction was at log time 2024-04-19 07:03:38.066076+00
+[36mpostgres_1  |[0m 2024-04-19 07:10:16.841 UTC [1] LOG:  database system is ready to accept connections
+[36mpostgres_1  |[0m 2024-04-19 07:10:17.715 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 07:10:17.715 UTC [31] DETAIL:  Key (id)=(1) already exists.
+[36mpostgres_1  |[0m 2024-04-19 07:10:17.715 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 07:10:17.719 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 07:10:17.719 UTC [31] DETAIL:  Key (id)=(2) already exists.
+[36mpostgres_1  |[0m 2024-04-19 07:10:17.719 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 07:10:17.723 UTC [31] ERROR:  duplicate key value violates unique constraint "roles_pkey"
+[36mpostgres_1  |[0m 2024-04-19 07:10:17.723 UTC [31] DETAIL:  Key (id)=(3) already exists.
+[36mpostgres_1  |[0m 2024-04-19 07:10:17.723 UTC [31] STATEMENT:  INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[36mpostgres_1  |[0m 2024-04-19 07:12:47.224 UTC [39] LOG:  invalid length of startup packet
+[36mpostgres_1  |[0m 2024-04-19 07:16:35.759 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mpostgres_1  |[0m 2024-04-19 07:16:35.759 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mpostgres_1  |[0m 2024-04-19 07:16:35.763 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mpostgres_1  |[0m 2024-04-19 07:16:35.781 UTC [23] LOG:  database system was interrupted; last known up at 2024-04-19 07:15:17 UTC
+[36mpostgres_1  |[0m 2024-04-19 07:16:35.995 UTC [23] LOG:  database system was not properly shut down; automatic recovery in progress
+[36mpostgres_1  |[0m 2024-04-19 07:16:35.998 UTC [23] LOG:  redo starts at 0/166F388
+[36mpostgres_1  |[0m 2024-04-19 07:16:35.998 UTC [23] LOG:  invalid record length at 0/166F468: wanted 24, got 0
+[36mpostgres_1  |[0m 2024-04-19 07:16:35.998 UTC [23] LOG:  redo done at 0/166F430
+[36mpostgres_1  |[0m 2024-04-19 07:16:36.014 UTC [1] LOG:  database system is ready to accept connections
+[33mjwtSqlApp   |[0m Server is running on port 8080.
+[33mjwtSqlApp   |[0m Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'users'
+[33mjwtSqlApp   |[0m Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'users' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+[33mjwtSqlApp   |[0m Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'roles'
+[33mjwtSqlApp   |[0m Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'roles' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+[33mjwtSqlApp   |[0m Executing (default): SELECT table_name FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'user_roles'
+[33mjwtSqlApp   |[0m Executing (default): SELECT i.relname AS name, ix.indisprimary AS primary, ix.indisunique AS unique, ix.indkey AS indkey, array_agg(a.attnum) as column_indexes, array_agg(a.attname) AS column_names, pg_get_indexdef(ix.indexrelid) AS definition FROM pg_class t, pg_class i, pg_index ix, pg_attribute a WHERE t.oid = ix.indrelid AND i.oid = ix.indexrelid AND a.attrelid = t.oid AND t.relkind = 'r' and t.relname = 'user_roles' GROUP BY i.relname, ix.indexrelid, ix.indisprimary, ix.indisunique, ix.indkey ORDER BY i.relname;
+[33mjwtSqlApp   |[0m Synchronized Db
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Role with ID 1 already exists. Skipping creation.
+[33mjwtSqlApp   |[0m Executing (default): INSERT INTO "roles" ("id","name","createdAt","updatedAt") VALUES ($1,$2,$3,$4) RETURNING "id","name","createdAt","updatedAt";
+[33mjwtSqlApp   |[0m Role with ID 2 already exists. Skipping creation.
+[33mjwtSqlApp   |[0m Role with ID 3 already exists. Skipping creation.
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	Freezing time to	{"time": "1713510632 561356672"}
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	🥶Freezing ⌛time for the [test-set-3] to [2024-04-19 07:10:32.561356672 +0000 UTC]
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	⌛Time 🥶frozen successfully for the [test-set-3] to [2024-04-19 07:10:32.561356672 +0000 UTC]
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	starting test for of	{"test case": "[38;5;208mtest-1[0;25;0m", "test set": "[38;5;208mtest-set-3[0;25;0m"}
+[33mjwtSqlApp   |[0m Executing (default): SELECT "id", "username", "email", "password", "createdAt", "updatedAt" FROM "users" AS "users" WHERE "users"."username" = 'admin' LIMIT 1;
+[33mjwtSqlApp   |[0m Executing (default): SELECT "roles"."id", "roles"."name", "roles"."createdAt", "roles"."updatedAt", "user_roles"."createdAt" AS "user_roles.createdAt", "user_roles"."updatedAt" AS "user_roles.updatedAt", "user_roles"."roleId" AS "user_roles.roleId", "user_roles"."userId" AS "user_roles.userId" FROM "roles" AS "roles" INNER JOIN "user_roles" AS "user_roles" ON "roles"."id" = "user_roles"."roleId" AND "user_roles"."userId" = 36;
+Testrun failed for testcase with id: [31m[1m"[0m[31mtest-1[0m[31m[1m"[0m
+
+--------------------------------------------------------------------
+
++-------------------------------------------------------------------------------------------------------------+
+| [91m                                               DIFFS TEST-1                                                [0m |
++-------------------------------------------------------------------------------------------------------------+
+|                     EXPECT HEADER                    |                   ACTUAL HEADER                      |
+| -----------------------------------------------------+----------------------------------------------------- |
+|       Etag: [W/"e9-[91mHa5zf9m5FZwktAAkdgQR8fQV8c8"][0m     |     Etag: [W/"e9-[92mNKu+W29lyA0ucE7DdB4+utnshlc"][0m       |
+|                                                      |                                                      |
+|                                                                                                             |
+|                      EXPECT BODY                     |                    ACTUAL BODY                       |
+| -----------------------------------------------------+----------------------------------------------------- |
+|    {                                                 |  {                                                   |
+|   -  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp | +  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp   |
+|   XVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUxM[31mDYzMiwiZXhwIjox[0m | XVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUxM[32mTIzNSwiZXhwIjox[0m   |
+|   [31mNzEzNTEwODEyfQ.g-5UBHlmCOJfEEGn7y1xOzyZ4yAI9kJGNUY[0m | [32mNzEzNTExNDE1fQ.UQPMFPSZXeIclbxJyF-idGVWf0joBMWhGC4[0m   |
+|   [31mupwWf-sY",[0m                                         | [32m3dq5Ee_4",[0m                                           |
+|      "email": "admin@keploy.io",                     |    "email": "admin@keploy.io",                       |
+|      "id": 36,                                       |    "id": 36,                                         |
+|      "roles": [                                      |    "roles": [                                        |
+|        : "ROLE_ADMIN"                                |      : "ROLE_ADMIN"                                  |
+|      ],                                              |    ],                                                |
+|      "username": "admin"                             |    "username": "admin"                               |
+|    }                                                 |  }                                                   |
+|                                                      |                                                      |
+|                                                                                                             |
++-------------------------------------------------------------------------------------------------------------+
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	result	{"testcase id": "[31mtest-1[0m", "testset id": "[31mtest-set-3[0m", "passed": "[31mfalse[0m", "consumed mocks": ["mock-0", "mock-1", "mock-2", "mock-3", "mock-4", "mock-6", "mock-7", "mock-8", "mock-9", "mock-10", "mock-11", "mock-12", "mock-13", "mock-14", "mock-15", "mock-19", "mock-20", "mock-25", "mock-26"]}
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	Freezing time to	{"time": "1713510656 103675299"}
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	🥶Freezing ⌛time for the [test-set-3] to [2024-04-19 07:10:56.103675299 +0000 UTC]
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	⌛Time 🥶frozen successfully for the [test-set-3] to [2024-04-19 07:10:56.103675299 +0000 UTC]
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	starting test for of	{"test case": "[38;5;208mtest-2[0;25;0m", "test set": "[38;5;208mtest-set-3[0;25;0m"}
+🐰 Keploy: 2024-04-19T07:20:35Z 	[31mERROR[0m	cannot convert json string into json object	{"error": "invalid character 'A' looking for beginning of value"}
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	result	{"testcase id": "[31mtest-2[0m", "testset id": "[31mtest-set-3[0m", "passed": "[31mfalse[0m", "consumed mocks": []}
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	Freezing time to	{"time": "1713510670 689994569"}
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	🥶Freezing ⌛time for the [test-set-3] to [2024-04-19 07:11:10.689994569 +0000 UTC]
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	⌛Time 🥶frozen successfully for the [test-set-3] to [2024-04-19 07:11:10.689994569 +0000 UTC]
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	starting test for of	{"test case": "[38;5;208mtest-3[0;25;0m", "test set": "[38;5;208mtest-set-3[0;25;0m"}
+Testrun failed for testcase with id: [31m[1m"[0m[31mtest-3[0m[31m[1m"[0m
+
+--------------------------------------------------------------------
+
++-------------------------------------------------------------------------------------------------------------+
+| [91m                                               DIFFS TEST-3                                                [0m |
++-------------------------------------------------------------------------------------------------------------+
+|                     EXPECT STATUS                    |                   ACTUAL STATUS                      |
+| -----------------------------------------------------+----------------------------------------------------- |
+|                          [91m200[0m                         |                        [92m401[0m                           |
+|                                                      |                                                      |
+|                                                                                                             |
+|                     EXPECT HEADER                    |                   ACTUAL HEADER                      |
+| -----------------------------------------------------+----------------------------------------------------- |
+|      Etag: [W/"1[91m9d-T6mZZma3SoKO4S2SievPlYKNj8w"][0m     |     Etag: [W/"1[92mb-+hyVTXaAZn38wYQ0jjrBzf9HwPI"][0m       |
+|                 Content-Length: [[91m413][0m                |                Content-Length: [[92m27][0m                  |
+|                                                      |                                                      |
+|                                                                                                             |
+|                      EXPECT BODY                     |                    ACTUAL BODY                       |
+| -----------------------------------------------------+----------------------------------------------------- |
+|   [91m[{"id":36,"username":"admin","email":"admin@keploy[0m | [92m{"message":"Unauthorized!"}[0m                          |
+|   [91m.io","password":"$2a$08$D6MjJCvq1scNcshktZLpc.CF7s[0m |                                                      |
+|   [91mCctBVjWV3WZqQQApdazadh9lO8i","createdAt":"2024-04-[0m |                                                      |
+|   [91m19T06:01:56.254Z","updatedAt":"2024-04-19T06:01:56[0m |                                                      |
+|   [91m.254Z"},{"id":38,"username":"sono","email":"son0@k[0m |                                                      |
+|   [91meploy.io","password":"$2a$08$7jSGcQVgeVmkCKIHErwER[0m |                                                      |
+|   [91m.RHRXIcGiIe8mhxkkWqy7TIEe6s4bdHK","createdAt":"202[0m |                                                      |
+|   [91m4-04-19T06:22:55.253Z","updatedAt":"2024-04-19T06:[0m |                                                      |
+|   [91m22:55.253Z"}][0m                                      |                                                      |
+|                                                      |                                                      |
+|                                                                                                             |
++-------------------------------------------------------------------------------------------------------------+
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	result	{"testcase id": "[31mtest-3[0m", "testset id": "[31mtest-set-3[0m", "passed": "[31mfalse[0m", "consumed mocks": []}
+
+ <=========================================> 
+  TESTRUN SUMMARY. For test-set: [31m[1m"[0m[31mtest-set-3[0m[31m[1m"[0m
+	Total tests: [34m[1m3[0m
+	Total test passed: [34m[1m0[0m
+	Total test failed: [34m[1m3[0m
+ <=========================================> 
+
+Gracefully stopping... (press Ctrl+C again to force)
+Killing jwtSqlApp          ... 
+Killing jwt-sql_postgres_1 ... 
+[1A[2KKilling jwt-sql_postgres_1 ... [32mdone[0m[1B[2A[2KKilling jwtSqlApp          ... [32mdone[0m[2B[31mERROR[0m: 2
+
+ <=========================================> 
+  COMPLETE TESTRUN SUMMARY. 
+	Total tests: [34m[1m3[0m
+	Total test passed: [34m[1m0[0m
+	Total test failed: [34m[1m3[0m
+
+	Test Suite Name		Total Test	Passed		Failed	
+
+	[31m[1m"[0m[31mtest-set-3[0m[31m[1m"[0m		[34m[1m3[0m		[34m[1m0[0m		[34m[1m3[0m
+<=========================================> 
+
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	test run completed	{"passed overall": false}
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	stopping Keploy	{"reason": "replay completed successfully"}
+🐰 Keploy: 2024-04-19T07:20:35Z 	[34mINFO[0m	proxy stopped...
+🐰 Keploy: 2024-04-19T07:20:36Z 	[34mINFO[0m	eBPF resources released successfully...
+🐰 Keploy: 2024-04-19T12:50:37+05:30 	[34mINFO[0m	exiting the current process as the command is moved to docker

@@ -7,41 +7,41 @@ spec:
         method: GET
         proto_major: 1
         proto_minor: 1
-        url: http://localhost:8080/api/test/admin
+        url: http://localhost:8080/api/test/user
         header:
             Accept: '*/*'
-            Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUwOTcwMywiZXhwIjoxNzEzNTA5ODgzfQ.kMt7gThZPwotkaI7EmUFbuReoos-ArdqlkpvQaFAXqY
+            Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUwOTIwMCwiZXhwIjoxNzEzNTA5MzgwfQ.RXToAgoKHl8baNUrETT-PBFHACFHIBYeFA6Ko5sm8TE
             Host: localhost:8080
             User-Agent: curl/7.88.1
         body: ""
-        timestamp: 2024-04-19T06:55:30.324286008Z
+        timestamp: 2024-04-19T06:47:19.076632851Z
     resp:
         status_code: 200
         header:
             Access-Control-Allow-Headers: Origin, Content-Type, Accept
             Access-Control-Allow-Origin: http://localhost:8081
             Connection: keep-alive
-            Content-Length: "14"
+            Content-Length: "13"
             Content-Type: text/html; charset=utf-8
-            Date: Fri, 19 Apr 2024 06:55:30 GMT
-            Etag: W/"e-fnwjbDfVOL+PPXeGm51DOtuMX+M"
+            Date: Fri, 19 Apr 2024 06:47:19 GMT
+            Etag: W/"d-AznB8FXUt+NgRdD3M3LvzELOYl8"
             Keep-Alive: timeout=5
             Vary: Origin
             X-Powered-By: Express
-        body: Admin Content.
+        body: User Content.
         status_message: OK
         proto_major: 0
         proto_minor: 0
-        timestamp: 2024-04-19T06:55:32.41035541Z
+        timestamp: 2024-04-19T06:47:21.127036404Z
     objects: []
     assertions:
         noise:
             header.Date: []
-    created: 1713509732
+    created: 1713509241
 curl: |
     curl --request GET \
-      --url http://localhost:8080/api/test/admin \
+      --url http://localhost:8080/api/test/user \
       --header 'Host: localhost:8080' \
       --header 'User-Agent: curl/7.88.1' \
       --header 'Accept: */*' \
-      --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUwOTcwMywiZXhwIjoxNzEzNTA5ODgzfQ.kMt7gThZPwotkaI7EmUFbuReoos-ArdqlkpvQaFAXqY' \
+      --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUwOTIwMCwiZXhwIjoxNzEzNTA5MzgwfQ.RXToAgoKHl8baNUrETT-PBFHACFHIBYeFA6Ko5sm8TE' \

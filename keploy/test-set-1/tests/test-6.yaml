@@ -4,44 +4,48 @@ name: test-6
 spec:
     metadata: {}
     req:
-        method: GET
+        method: PUT
         proto_major: 1
         proto_minor: 1
-        url: http://localhost:8080/api/test/admin
+        url: http://localhost:8080/api/user/39/updateRole
         header:
             Accept: '*/*'
-            Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzEzNTA3MDk4LCJleHAiOjE3MTM1OTM0OTh9.zEQwPksvis9tTs1sjtOidlDd__m296DX6I1NhTmQVlc
+            Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUwOTcwMywiZXhwIjoxNzEzNTA5ODgzfQ.kMt7gThZPwotkaI7EmUFbuReoos-ArdqlkpvQaFAXqY
+            Content-Length: "23"
+            Content-Type: application/json
             Host: localhost:8080
             User-Agent: curl/7.88.1
-        body: ""
-        timestamp: 2024-04-19T06:12:22.34951689Z
+        body: '{"role": ["moderator"]}'
+        timestamp: 2024-04-19T06:56:28.735007203Z
     resp:
-        status_code: 403
+        status_code: 200
         header:
             Access-Control-Allow-Headers: Origin, Content-Type, Accept
             Access-Control-Allow-Origin: http://localhost:8081
             Connection: keep-alive
-            Content-Length: "33"
+            Content-Length: "93"
             Content-Type: application/json; charset=utf-8
-            Date: Fri, 19 Apr 2024 06:12:22 GMT
-            Etag: W/"21-gJAHz/3ltoRSM1Lfi4co8rvPVXU"
+            Date: Fri, 19 Apr 2024 06:56:28 GMT
+            Etag: W/"5d-gc1q9DufxY0jEhfmxGnmdte0GIU"
             Keep-Alive: timeout=5
             Vary: Origin
             X-Powered-By: Express
-        body: '{"message":"Require Admin Role!"}'
-        status_message: Forbidden
+        body: '{"message":"Cannot update user with id=39. User may not exist or request body may be empty."}'
+        status_message: OK
         proto_major: 0
         proto_minor: 0
-        timestamp: 2024-04-19T06:12:24.393726483Z
+        timestamp: 2024-04-19T06:56:30.808101616Z
     objects: []
     assertions:
         noise:
             header.Date: []
-    created: 1713507144
-curl: |
-    curl --request GET \
-      --url http://localhost:8080/api/test/admin \
-      --header 'User-Agent: curl/7.88.1' \
+    created: 1713509790
+curl: |-
+    curl --request PUT \
+      --url http://localhost:8080/api/user/39/updateRole \
       --header 'Accept: */*' \
-      --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzEzNTA3MDk4LCJleHAiOjE3MTM1OTM0OTh9.zEQwPksvis9tTs1sjtOidlDd__m296DX6I1NhTmQVlc' \
+      --header 'Content-Type: application/json' \
+      --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUwOTcwMywiZXhwIjoxNzEzNTA5ODgzfQ.kMt7gThZPwotkaI7EmUFbuReoos-ArdqlkpvQaFAXqY' \
       --header 'Host: localhost:8080' \
+      --header 'User-Agent: curl/7.88.1' \
+      --data '{"role": ["moderator"]}'

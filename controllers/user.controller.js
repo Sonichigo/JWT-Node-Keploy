@@ -53,4 +53,14 @@ exports.updateRole = (req, res) => {
     .catch(err => {
       res.status(500).send({ message: "Error deleting user." });
     });
+};
+
+exports.getAllUsers = (req, res) => {
+    User.findAll()
+      .then(users => {
+        res.status(200).send(users);
+      })
+      .catch(err => {
+        res.status(500).send({ message: err.message });
+      });
   };

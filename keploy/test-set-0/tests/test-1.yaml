@@ -1,6 +1,6 @@
 version: api.keploy.io/v1beta1
 kind: Http
-name: test-5
+name: test-1
 spec:
     metadata: {}
     req:
@@ -13,35 +13,35 @@ spec:
             Host: localhost:8080
             User-Agent: curl/7.88.1
         body: ""
-        timestamp: 2024-04-19T06:56:00.889361302Z
+        timestamp: 2024-04-19T06:46:12.998885642Z
     resp:
         status_code: 200
         header:
             Access-Control-Allow-Headers: Origin, Content-Type, Accept
             Access-Control-Allow-Origin: http://localhost:8081
             Connection: keep-alive
-            Content-Length: "621"
+            Content-Length: "616"
             Content-Type: application/json; charset=utf-8
-            Date: Fri, 19 Apr 2024 06:56:00 GMT
-            Etag: W/"26d-CR08kWwwfWX5BTkCq+WdQ17bV34"
+            Date: Fri, 19 Apr 2024 06:46:13 GMT
+            Etag: W/"268-4hFqfuRS2U2flN9Aqh4hUSjZc1Y"
             Keep-Alive: timeout=5
             Vary: Origin
             X-Powered-By: Express
-        body: '[{"id":36,"username":"admin","email":"admin@keploy.io","password":"$2a$08$D6MjJCvq1scNcshktZLpc.CF7sCctBVjWV3WZqQQApdazadh9lO8i","createdAt":"2024-04-19T06:01:56.254Z","updatedAt":"2024-04-19T06:01:56.254Z"},{"id":38,"username":"sono","email":"son0@keploy.io","password":"$2a$08$7jSGcQVgeVmkCKIHErwER.RHRXIcGiIe8mhxkkWqy7TIEe6s4bdHK","createdAt":"2024-04-19T06:22:55.253Z","updatedAt":"2024-04-19T06:22:55.253Z"},{"id":39,"username":"gouro","email":"gouru0@keploy.io","password":"$2a$08$RtNvzxxeHp1u6ajm2kswGe3q51wTkNuinQo1SP0aRtaKbjp/Ei2sy","createdAt":"2024-04-19T06:54:53.329Z","updatedAt":"2024-04-19T06:54:53.329Z"}]'
+        body: '[{"id":36,"username":"admin","email":"admin@keploy.io","password":"$2a$08$D6MjJCvq1scNcshktZLpc.CF7sCctBVjWV3WZqQQApdazadh9lO8i","createdAt":"2024-04-19T06:01:56.254Z","updatedAt":"2024-04-19T06:01:56.254Z"},{"id":37,"username":"son","email":"son@keploy.io","password":"$2a$08$4TEXu8Uf3JSD/2yO6oUKgO0Ea1AEl0gLBAowpAebGetMdNpLbrTNy","createdAt":"2024-04-19T06:10:41.594Z","updatedAt":"2024-04-19T06:10:41.594Z"},{"id":38,"username":"sono","email":"son0@keploy.io","password":"$2a$08$7jSGcQVgeVmkCKIHErwER.RHRXIcGiIe8mhxkkWqy7TIEe6s4bdHK","createdAt":"2024-04-19T06:22:55.253Z","updatedAt":"2024-04-19T06:22:55.253Z"}]'
         status_message: OK
         proto_major: 0
         proto_minor: 0
-        timestamp: 2024-04-19T06:56:02.974169918Z
+        timestamp: 2024-04-19T06:46:15.129470232Z
     objects: []
     assertions:
         noise:
             body.createdAt: []
             body.updatedAt: []
             header.Date: []
-    created: 1713509762
+    created: 1713509175
 curl: |
     curl --request GET \
       --url http://localhost:8080/api/users \
+      --header 'User-Agent: curl/7.88.1' \
       --header 'Accept: */*' \
       --header 'Host: localhost:8080' \
-      --header 'User-Agent: curl/7.88.1' \

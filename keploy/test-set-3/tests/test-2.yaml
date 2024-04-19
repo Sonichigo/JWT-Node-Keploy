@@ -1,6 +1,6 @@
 version: api.keploy.io/v1beta1
 kind: Http
-name: test-4
+name: test-2
 spec:
     metadata: {}
     req:
@@ -10,11 +10,11 @@ spec:
         url: http://localhost:8080/api/test/admin
         header:
             Accept: '*/*'
-            Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUwOTcwMywiZXhwIjoxNzEzNTA5ODgzfQ.kMt7gThZPwotkaI7EmUFbuReoos-ArdqlkpvQaFAXqY
+            Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUxMDYzMiwiZXhwIjoxNzEzNTEwODEyfQ.g-5UBHlmCOJfEEGn7y1xOzyZ4yAI9kJGNUYupwWf-sY
             Host: localhost:8080
             User-Agent: curl/7.88.1
         body: ""
-        timestamp: 2024-04-19T06:55:30.324286008Z
+        timestamp: 2024-04-19T07:10:56.103675299Z
     resp:
         status_code: 200
         header:
@@ -23,7 +23,7 @@ spec:
             Connection: keep-alive
             Content-Length: "14"
             Content-Type: text/html; charset=utf-8
-            Date: Fri, 19 Apr 2024 06:55:30 GMT
+            Date: Fri, 19 Apr 2024 07:10:56 GMT
             Etag: W/"e-fnwjbDfVOL+PPXeGm51DOtuMX+M"
             Keep-Alive: timeout=5
             Vary: Origin
@@ -32,16 +32,16 @@ spec:
         status_message: OK
         proto_major: 0
         proto_minor: 0
-        timestamp: 2024-04-19T06:55:32.41035541Z
+        timestamp: 2024-04-19T07:10:58.18936193Z
     objects: []
     assertions:
         noise:
             header.Date: []
-    created: 1713509732
+    created: 1713510658
 curl: |
     curl --request GET \
       --url http://localhost:8080/api/test/admin \
-      --header 'Host: localhost:8080' \
       --header 'User-Agent: curl/7.88.1' \
       --header 'Accept: */*' \
-      --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUwOTcwMywiZXhwIjoxNzEzNTA5ODgzfQ.kMt7gThZPwotkaI7EmUFbuReoos-ArdqlkpvQaFAXqY' \
+      --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUxMDYzMiwiZXhwIjoxNzEzNTEwODEyfQ.g-5UBHlmCOJfEEGn7y1xOzyZ4yAI9kJGNUYupwWf-sY' \
+      --header 'Host: localhost:8080' \

@@ -7,52 +7,54 @@ spec:
         method: POST
         proto_major: 1
         proto_minor: 1
-        url: http://localhost:8080/api/auth/signup
+        url: http://localhost:8080/api/auth/signin
         header:
             Accept: '*/*'
-            Content-Length: "81"
+            Content-Length: "100"
             Content-Type: application/json
             Host: localhost:8080
             User-Agent: curl/7.88.1
         body: |-
             {
-                "username":"gouro",
-                "email":"gouru0@keploy.io",
-                "password":"1234"
+              "username": "admin",
+              "email": "admin@keploy.io",
+              "password": "admin",
+              "roles": ["admin"]
             }
-        timestamp: 2024-04-19T06:54:53.255458212Z
+        timestamp: 2024-04-19T06:46:40.112264124Z
     resp:
         status_code: 200
         header:
             Access-Control-Allow-Headers: Origin, Content-Type, Accept
             Access-Control-Allow-Origin: http://localhost:8081
             Connection: keep-alive
-            Content-Length: "47"
+            Content-Length: "233"
             Content-Type: application/json; charset=utf-8
-            Date: Fri, 19 Apr 2024 06:54:53 GMT
-            Etag: W/"2f-ycIOj/6kXGxPaEoiW5+ikfXgO5w"
+            Date: Fri, 19 Apr 2024 06:46:40 GMT
+            Etag: W/"e9-7Ddgpsp1cO8T3hAs3y52BC6F0eA"
             Keep-Alive: timeout=5
             Vary: Origin
             X-Powered-By: Express
-        body: '{"message":"User was registered successfully!"}'
+        body: '{"id":36,"username":"admin","email":"admin@keploy.io","roles":["ROLE_ADMIN"],"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzYsImlhdCI6MTcxMzUwOTIwMCwiZXhwIjoxNzEzNTA5MzgwfQ.RXToAgoKHl8baNUrETT-PBFHACFHIBYeFA6Ko5sm8TE"}'
         status_message: OK
         proto_major: 0
         proto_minor: 0
-        timestamp: 2024-04-19T06:54:55.408477472Z
+        timestamp: 2024-04-19T06:46:42.261808165Z
     objects: []
     assertions:
         noise:
             header.Date: []
-    created: 1713509695
+    created: 1713509202
 curl: |-
     curl --request POST \
-      --url http://localhost:8080/api/auth/signup \
-      --header 'Host: localhost:8080' \
-      --header 'User-Agent: curl/7.88.1' \
+      --url http://localhost:8080/api/auth/signin \
       --header 'Accept: */*' \
       --header 'Content-Type: application/json' \
+      --header 'Host: localhost:8080' \
+      --header 'User-Agent: curl/7.88.1' \
       --data '{
-        "username":"gouro",
-        "email":"gouru0@keploy.io",
-        "password":"1234"
+      "username": "admin",
+      "email": "admin@keploy.io",
+      "password": "admin",
+      "roles": ["admin"]
     }'
