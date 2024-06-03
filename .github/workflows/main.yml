@@ -1,0 +1,20 @@
+name: Run keploy-test-cases
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Test-Report
+      uses: keploy/testgpt@main
+      with:
+        working-directory: ./
+        delay: 10
+        command: node app.js
