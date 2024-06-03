@@ -23,7 +23,6 @@ jobs:
       run: |
           curl --silent --location "https://github.com/keploy/keploy/releases/latest/download/keploy_linux_amd64.tar.gz" | tar xz -C /tmp
           sudo mkdir -p /usr/local/bin && sudo mv /tmp/keploy /usr/local/bin/keploy
-          sudo mount -t debugfs debugfs /sys/kernel/debug
           
           # Install application dependencies
           npm install
