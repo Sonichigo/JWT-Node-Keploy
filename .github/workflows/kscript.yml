@@ -1,0 +1,32 @@
+name: Run keploy-test-cases
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, reopened, synchronise]
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Commit
+      uses: actions/checkout@v2
+    - name: Set up Go
+      uses: actions/setup-node@v2
+      with:
+        node-version: 18
+
+    - name: Keploy Tests
+      id: keploy-run-test
+      run: |
+          curl --silent --location "https://github.com/keploy/keploy/releases/latest/download/keploy_linux_amd64.tar.gz" | tar xz -C /tmp
+          sudo mkdir -p /usr/local/bin && sudo mv /tmp/keploy /usr/local/bin/keploy
+          sudo mount -t debugfs debugfs /sys/kernel/debug
+          
+          # Install application dependencies
+          npm install
+          
+          # Run the keploy captured tests
+          keploy test -c "node app.js"
